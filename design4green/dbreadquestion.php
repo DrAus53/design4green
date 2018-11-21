@@ -22,7 +22,7 @@ class TableRows extends RecursiveIteratorIterator {
 
 $servername = "localhost";
 $username = "damien";
-$password = "brocosurvey";
+$password = "brocos";
 $dbname = "brocosurvey";
 
 try {
