@@ -11,8 +11,8 @@ echo '<center><strong>Brocos Team Survey</strong>';
 echo '<br/>' . "\n";
 echo '<br/>' . "\n";
 ?>
-<button onclick="myFunction()">Save it</button>
-<p id="demo"></p>
+<button onclick="sendSurveyResult()">Save it</button>
+<p id="surveySaveLink"></p>
 <?php
 echo '</center><br/>' . "\n";
 
@@ -84,11 +84,18 @@ try {
 }
 $conn = null;
 
+function registerSurveyResult() {
+    echo "HERE WE AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARE";
+}
+
 ?>
 
 <script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
+function sendSurveyResult() {
+    document.getElementById("surveySaveLink").innerHTML = "Use this link to fill the survey later : http://vps612249.ovh.net";
+    <?php
+    registerSurveyResult();
+    ?>
 }
 </script>
 
