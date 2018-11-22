@@ -73,9 +73,9 @@
 <script>
 function myFunction(id) {
 	
-	
+	alert("in");
  	
- 	<?php echo $q[1] ;?>{
+ 	{
 		
 	 	
 // 	if(nextReponse[1]=="value"){
