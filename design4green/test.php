@@ -117,7 +117,8 @@ function createMultipleChoiceRep(){
 	inputRep.id = ("checkbox"+compteur);
 	var labelRep = document.createElement('label');
 	labelRep.htmlFor = "reponse"+compteur-1;
-	labelRep.appendChild(document.createTextNode("coucou");
+	var intitule = document.createTextNode("coucou");
+	labelRep.appendChild(document.createTextNode("coucou"));
 	divRep.appendChild(inputRep);
 	divRep.appendChild(labelRep);
 	question.appendChild(divRep);
