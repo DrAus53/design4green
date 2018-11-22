@@ -57,7 +57,7 @@ $nbReponseQuestion = count($reponseQuestion);
 	</div>
 </body>
 
-<script>
+<script type="text/javascript">
 
 function changeQuestion() {
 	if(document.getElementById('description') != null){
