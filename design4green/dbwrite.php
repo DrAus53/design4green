@@ -85,7 +85,7 @@ try {
 $conn = null;
 
 function registerSurveyResult() {
-    $msgFunc = "test";
+    include ('dbregister.php');
     return $msgFunc;
 }
 
