@@ -85,7 +85,7 @@ try {
 $conn = null;
 
 function registerSurveyResult() {
-    echo "lol";
+
 }
 
 ?>
