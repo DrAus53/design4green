@@ -51,6 +51,8 @@ include ('dbread.php');
     	question.innerHTML="<?php echo $q[1];?>";
     	<?php $compteurQuestion++; ?>;
     	answer.innerHTML="<?php echo $compteurQuestion;?>";
+    	var test =  "<?php echo $q[1] ;?>"
+    	alert(test);
     }
 
     </script>
