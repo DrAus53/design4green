@@ -72,22 +72,12 @@
 </form>
 <script>
 function myFunction(id) {
-	alert(id);
 	
- 	/* var response = document.getElementById("interest");	 */
 	
-	/* 
- 	questions[nextQuestion][0]=="single_choice"){
+ 	
+ 	<?php echo $q[id]=="single_choice" ;?>{
 		
-	 		var node = document.getElementById("questionmultiple");
- 		for(int i=0;i<questions[nextQuestion][2].length;i++){		
-			
- 			var newlabel = document.createElement("Label");
- 			newlabel.innerHTML = (questions[nextQuestion][2])[2];	
- 			node.innerHTML=newlabel.innerHTML;		
- 		}	
-	}  */
-	
+	 	
 // 	if(nextReponse[1]=="value"){
 		
 // 		var node = document.getElementById("questionmultiple");
