@@ -15,6 +15,7 @@ try {
     // set the resulting array to associative
     $result = $stmtQuestion->setFetchMode(PDO::FETCH_ASSOC);
     $state = "init";
+    $reponsePreced = "";
     while ($donnesQuestion = $stmtQuestion->fetch()) {
         $idQ = $donnesQuestion['id'];
         $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=".$idQ;
@@ -27,8 +28,6 @@ try {
         echo '<br/>'."\n";
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
-            $compteur=0;
-            
             $reponses[] = array(
                 $donnesReponse['id'],
                 $donnesReponse['id_quest_suiv'],
@@ -44,10 +43,10 @@ try {
             }
             else {
                 echo '&nbsp';
-                if ($compteur==0) {
+                if ($reponsePreced!=$donnesReponse['valeur']) {
                     echo $donnesReponse['valeur'];
                     echo '&nbsp';
-                    $compteur+=1;
+                    $reponsePreced=$donnesReponse['valeur'];
                 }
                 echo '<input type="checkbox" name="test" value="value">';
                 echo '&nbsp';
