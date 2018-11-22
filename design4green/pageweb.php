@@ -72,8 +72,8 @@
 <script>
 function myFunction() {
 	alert("te");
- 	var response = document.getElementById("interest");	
-	var questions= <?php $questions ?>
+//  	var response = document.getElementById("interest");	
+	
 	
  /* 	if(questions[nextQuestion][0]=="single_choice"){
 		
