@@ -43,7 +43,8 @@ try {
     $state = "init";
     while ($donnesQuestion = $stmtQuestion->fetch()) {
         $idQ = $donnesQuestion['id'];
-        $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=" + str_replace("`", "", $idQ);
+        //$requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=" + str_replace("`", "", $idQ);
+        $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=1";
         echo $requete;
         $stmtReponse = $conn->prepare($requete);
         $stmtReponse->execute();
