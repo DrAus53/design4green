@@ -20,11 +20,12 @@ try {
         $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=".$idQ;
         $stmtReponse = $conn->prepare($requete);
         $stmtReponse->execute();
-        $reponses = [];
+        $reponses = array();
         
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
-            $reponses[$idQ] = array(
+            $idR = $donnesReponse['id'];
+            $reponses[idR] = array(
                 $donnesReponse['id'],
                 $donnesReponse['id_quest_suiv'],
                 $donnesReponse['valeur'],
