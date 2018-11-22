@@ -28,7 +28,7 @@
 
  <div id="questionmultiple">
  	 <fieldset>
- 		 <div id="question">success</div>
+ 		 <div id="question">succesS</div>
     		  <p class="flip" onclick="myFunction()">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
    			    <label for='o'> Oui </label>
@@ -71,7 +71,7 @@
 </form>
 <script>
 function myFunction() {
-	alert("te");
+	alert("tee");
 //  	var response = document.getElementById("interest");	
 	
 	
