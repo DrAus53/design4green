@@ -61,7 +61,7 @@
 <!--       </div> -->
       
 <!--      <div> -->
-      <p class="flip" onclick="myFunction()">Question suivante</p>
+      <!--  <p class="flip" onclick="myFunction()">Question suivante</p>-->
 <!--       </div> -->
     
 <!--       </fieldset> -->
@@ -70,29 +70,29 @@
 <script>
 function myFunction() {
 	alert("te");
-	var response = document.getElementById("interest");	
+// 	var response = document.getElementById("interest");	
 	var questions = <?php $question ?>
 	
-	if(questions[nextQuestion][0]=="single_choice"){
+// 	if(questions[nextQuestion][0]=="single_choice"){
 		
-		var node = document.getElementById("questionmultiple");
-		for(int i=0;i<questions[nextQuestion][2].length;i++){		
+// 		var node = document.getElementById("questionmultiple");
+// 		for(int i=0;i<questions[nextQuestion][2].length;i++){		
 			
-			var newlabel = document.createElement("Label");
-			newlabel.innerHTML = (questions[nextQuestion][2])[2];	
-			node.innerHTML=newlabel.innerHTML;		
-		}	
-	}
+// 			var newlabel = document.createElement("Label");
+// 			newlabel.innerHTML = (questions[nextQuestion][2])[2];	
+// 			node.innerHTML=newlabel.innerHTML;		
+// 		}	
+// 	}
 	
-	if(nextReponse[1]=="value"){
+// 	if(nextReponse[1]=="value"){
 		
-		var node = document.getElementById("questionmultiple");
-		for(int i=0;i<variableRecuperee[3].length;i++){					
-			var newlabel = document.createElement("Input");
-			newlabel.innerHTML = '';	
-			node.innerHTML=newlabel.innerHTML;		
-		}	
-	}
+// 		var node = document.getElementById("questionmultiple");
+// 		for(int i=0;i<variableRecuperee[3].length;i++){					
+// 			var newlabel = document.createElement("Input");
+// 			newlabel.innerHTML = '';	
+// 			node.innerHTML=newlabel.innerHTML;		
+// 		}	
+// 	}
 }
 </script>
 </body>
