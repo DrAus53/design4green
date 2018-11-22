@@ -16,7 +16,6 @@ try {
     $result = $stmtQuestion->setFetchMode(PDO::FETCH_ASSOC);
     $state = "init";
     while ($donnesQuestion = $stmtQuestion->fetch()) {
-        $compteur=0;
         $idQ = $donnesQuestion['id'];
         $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=".$idQ;
         $stmtReponse = $conn->prepare($requete);
@@ -28,6 +27,7 @@ try {
         echo '<br/>'."\n";
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
+            $compteur=0;
             $reponses[] = array(
                 $donnesReponse['id'],
                 $donnesReponse['id_quest_suiv'],
