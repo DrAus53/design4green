@@ -46,6 +46,9 @@ try {
         //$requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=" + str_replace("`", "", $idQ);
         $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=1";
         echo $requete;
+        echo "/n";
+        echo $idQ;
+        echo "/n";
         $stmtReponse = $conn->prepare($requete);
         $stmtReponse->execute();
         $reponses = [];
