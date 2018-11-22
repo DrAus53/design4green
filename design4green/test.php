@@ -74,16 +74,16 @@ function changeQuestion() {
 }
 
 function createQuestion(id){
-	if(<?php echo $typeQuestion?> == 'multiple_choice'){
+	if("<?php echo $typeQuestion?>" == 'multiple_choice'){
 		createMultipleQuestion();
 	}
-	if(<?php echo $typeQuestion?> == 'single_choice'){
+	if("<?php echo $typeQuestion?>" == 'single_choice'){
 		createMultipleQuestion();
 	}
-	if(<?php echo $typeQuestion?> == 'multiple_response'){
+	if("<?php echo $typeQuestion?>" == 'multiple_response'){
 		createMultipleQuestion();
 	}
-	if(<?php echo $typeQuestion?> == 'value'){
+	if("<?php echo $typeQuestion?>" == 'value'){
 		createMultipleQuestion();
 	}
 }
