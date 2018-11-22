@@ -32,7 +32,7 @@
    			    <label for='o'> </label>		    
     </fieldset>
   </div>
-    
+ 
 <div id="question">
  
 
@@ -56,13 +56,20 @@ function createSingleChoice(){
 	
 	var divRep = question.appendChild(document.createElement("div"));
 	
-	var input = divRep.appendChild(document.createElement("input"));
-	input.type="radio"
-	var label=input.appendChild(document.createElement("label"));
-	label.innerHTML="yes"
+	"<?php $f = $q[3];   
+	   $tailleRep=count($f);
+	?>";
+
+	for (i=1; i<<?php echo $tailleRep; ?>; i++) { 
+		var input = divRep.appendChild(document.createElement("input"));
+		input.type="radio";
+		input.innerHTML=<?php echo $f[i]; ?>
 		
-
-
+		var label=input.appendChild(document.createElement("label"));
+		label.innerHTML="yes"
+		var label=input.appendChild(document.createElement("label"));
+		label.innerHTML="no"
+	}
 }
 
 </script>
