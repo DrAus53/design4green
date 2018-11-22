@@ -49,11 +49,12 @@ include ('dbread.php');
         
     	var question = document.getElementById("surveyQuestion");
     	var answer = document.getElementById("surveyAnswer");
-    	<?php $q=$questions[1];?>
 		if (compteur==2) {
 			<?php $q=$questions[2];?>
 		} else if (compteur==3) {
 			<?php $q=$questions[3];?>
+		} else {
+	    	<?php $q=$questions[1];?>
 		}
     	question.innerHTML="<?php echo $q[1];?>";
     	answer.innerHTML="compteur :"+compteur;
