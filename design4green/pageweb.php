@@ -60,7 +60,7 @@ function createSingleChoice(){
 	 		var input = divRep.appendChild(document.createElement("input"));
 	 		input.type="radio";
  	 		var label=input.appendChild(document.createElement("label"));
-// 	 		label.innerHTML="yes"
+ 	 		label.innerHTML="yes"
 // 	 		var label=input.appendChild(document.createElement("label"));
 // 	 		label.innerHTML="no" 		
 		}
