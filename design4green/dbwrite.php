@@ -34,7 +34,6 @@ try {
                 $donnesReponse['valeur'],
                 $donnesReponse['champ_select'],
                 $donnesReponse['champ_texte']);
-            
             if ($donnesReponse['champ_select']==null) {
                 echo '&nbsp';
                 echo '<input type="checkbox" name="test" value="value">';
