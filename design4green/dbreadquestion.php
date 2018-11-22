@@ -57,9 +57,9 @@ try {
                 $donnesReponse['valeur'], 
                 $donnesReponse['champ_select'], 
                 $donnesReponse['champ_texte']);
+            echo  $donnesReponse['valeur'];
+            echo '<br/>'."\n";
         }
-        echo  $donnesReponse['valeur'];
-        echo '<br/>'."\n";
         $questions[$idQ] = array(
             $donnesQuestion['type_reponse'],
             $donnesQuestion['valeur'],
