@@ -28,8 +28,7 @@
  		 <div id="question">sucess</div>
     		  <p class="flip" onclick="myFunction(1)">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
-   			    <label for='o'> <?php 
-					 $q = $questions[1]; echo $q[1];?></label>		    
+   			    <label for='o'> </label>		    
     </fieldset>
   </div>
     
