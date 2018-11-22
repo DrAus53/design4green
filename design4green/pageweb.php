@@ -24,13 +24,13 @@
 <p onclick="myFunction()"></p>
 
 <form>
- <div id="questionultiple">
+ <div id="questionmultiple">
  	 <fieldset>
  		 <div id="question">sucess</div>
     		  <p class="flip" onclick="myFunction()">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
-   			    <label for='o'> <?php echo count($questions); ?> </label>
    			    <label for='o'> <?php echo $questions[0]; ?> </label>
+   			  
    			    
     </fieldset>
   </div>
@@ -72,7 +72,7 @@
 <script>
 function myFunction() {
 	alert("tee");
- 	var response = document.getElementById("interest");	
+ 	/* var response = document.getElementById("interest");	 */
 	
 	
  /* 	if(questions[nextQuestion][0]=="single_choice"){
