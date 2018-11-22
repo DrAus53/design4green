@@ -16,6 +16,7 @@ try {
     $result = $stmtQuestion->setFetchMode(PDO::FETCH_ASSOC);
     $state = "init";
     while ($donnesQuestion = $stmtQuestion->fetch()) {
+        $compteur=0;
         $idQ = $donnesQuestion['id'];
         $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=".$idQ;
         $stmtReponse = $conn->prepare($requete);
@@ -42,9 +43,10 @@ try {
             }
             else {
                 echo '&nbsp';
-                if (true) {
+                if ($compteur==0) {
                     echo $donnesReponse['valeur'];
                     echo '&nbsp';
+                    $compteur+=1;
                 }
                 echo '<input type="checkbox" name="test" value="value">';
                 echo '&nbsp';
