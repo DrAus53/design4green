@@ -37,7 +37,7 @@ try {
     $stmtQuestion = $conn->prepare("SELECT id, type_reponse, valeur FROM Question");
     $stmtQuestion->execute();
 
-    $questions = [];
+    $questions = array();
     // set the resulting array to associative
     $result = $stmtQuestion->setFetchMode(PDO::FETCH_ASSOC);
     while ($donnesQuestion = $stmtQuestion->fetch()) {
@@ -48,9 +48,9 @@ try {
         
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
-            $reponses[] = array($donnesReponse['id'], $donnesReponse['id_quest_suiv'], $donnesReponse['valeur'], $donnesReponse['champ_select'], $donnesReponse['champ_texte']);
+            //$reponses[] = array($donnesReponse['id'], $donnesReponse['id_quest_suiv'], $donnesReponse['valeur'], $donnesReponse['champ_select'], $donnesReponse['champ_texte']);
         }
-        $questions[] = array($idQ, $donnesQuestion['type_reponse'], $donnesQuestion['valeur'],  $reponses);
+        $questions[$idQ] = array($donnesQuestion['type_reponse'], $donnesQuestion['valeur'],  $reponses);
     }
     echo $questions;
 } catch (PDOException $e) {
