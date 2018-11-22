@@ -77,7 +77,7 @@ $nbReponseQuestion = count($reponseQuestion);
 				</div>
 			</div>
 		</footer>
-
+	</div>
 </body>
 
 <script type="text/javascript">
@@ -156,28 +156,26 @@ function afficher_conclusion() {
 	}
 
 function myFunction(id) {
-	alert(id);
 	var typeQuestion =  "<?php echo $q[0] ;?>"
-	alert(test);
 	if(typeQuestion=='single_choice'){
 		alert(typeQuestion);
 		createSingleChoice();
 	} else if(typeQuestion=='value'){
-		createQuestionVelue()
+		alert("value");
+		createQuestionValue();
 	}
 }
 
-function createQuestionVelue(){
+function createQuestionValue(){
 		var question = document.getElementById("question");
 		var div = question.appendChild(document.createElement("div"));
 		div.innerHTML="<?php echo $q[1];?>"	
 		 	var divRep = question.appendChild(document.createElement("div"));		
 			"<?php
-
-$f = $q[2];
-echo (count($q[2]));
-$tailleRep = count($f);
-?>" ;
+            $f = $q[2];
+            echo (count($q[2]));
+            $tailleRep = count($f);
+            ?>" ;
 			for (var i=0; i<=<?php echo $tailleRep-1; ?>; i++) { 
 		 		var input = divRep.appendChild(document.createElement("input"));
 		 		input.setAttribute("type", "text");
