@@ -21,6 +21,7 @@ try {
         $stmtReponse = $conn->prepare($requete);
         $stmtReponse->execute();
         $reponses = [];
+        echo '<br/>'."\n";
         echo $donnesQuestion['valeur'];
         echo '<br/>'."\n";
         echo '<br/>'."\n";
@@ -33,7 +34,6 @@ try {
                 $donnesReponse['champ_select'], 
                 $donnesReponse['champ_texte']);
             echo  $donnesReponse['valeur'];
-            echo '<br/>'."\n";
             echo '<br/>'."\n";
         }
         $questions[$idQ] = array(
