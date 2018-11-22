@@ -46,7 +46,7 @@ $nbReponseQuestion = count($reponseQuestion);
 			</div>
 			</br>
 			<div class="flip" id="buttonNext">
-		      		<p id="buttonNextDescription" onclick="changeQuestion()">
+		      		<p id="buttonNextDescription" onclick="createQuestion(<?php echo $idQuestion?>)">
 		      		Let's do this ! :)
 		      		</p>
 		    </div>
