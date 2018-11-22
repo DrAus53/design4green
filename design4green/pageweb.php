@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<?php include ('dbreadquestion.php') ;
+<?php include ('dbwrite.php') ;
  ?>
 <style>
 #panel, .flip {
