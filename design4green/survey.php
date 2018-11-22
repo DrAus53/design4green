@@ -59,12 +59,19 @@ include ('dbread.php');
 		} else if (compteur==3) {
 			<?php $q=$questions[3];?>
 			question.innerHTML="<?php echo $q[1];?>";
+		} else if (compteur==4) {
+			<?php $q=$questions[4];?>
+			question.innerHTML="<?php echo $q[1];?>";
+		} else if (compteur==5) {
+			<?php $q=$questions[5];?>
+			question.innerHTML="<?php echo $q[1];?>";
+		} else if (compteur==6) {
+			<?php $q=$questions[6];?>
+			question.innerHTML="<?php echo $q[1];?>";
 		} else {
-	    	<?php $q=$questions[39];?>
-	    	question.innerHTML="<?php echo $q[1];?>";
+	    	question.innerHTML="No more questions.";
 		}
 
-    	answer.innerHTML="compteur :"+compteur;
     	compteur++;
 
     }
