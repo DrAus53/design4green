@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<?php include ('dbread.php') ;
+<?php include ('dbread.php');
  ?>
 <style>
 #panel, .flip {
