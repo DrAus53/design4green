@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 
 <html>
+<head>
+</head>
 <body>
 
 <?php
 echo '<br/>' . "\n";
-echo '<center><strong>Brocos Team Survey</strong></center>';
+echo '<center><strong>Brocos Team Survey</strong>';
 echo '<br/>' . "\n";
 echo '<br/>' . "\n";
 ?>
-<button onclick="sendSurveyResult()">Fucking Save It</button>
+<button onclick="myFunction()">Save it</button>
+<p id="demo"></p>
 <?php
-echo '<br/>' . "\n";
+echo '</center><br/>' . "\n";
 
 $servername = "localhost";
 $username = "damien";
@@ -84,10 +87,9 @@ $conn = null;
 ?>
 
 <script>
-
-function sendSurveyResult() {
-	alert("WALLAHHH");
- 	
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
 </script>
 
 </body>
