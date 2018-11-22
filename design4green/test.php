@@ -103,7 +103,7 @@ function createMultipleQuestion(){
 	questionContainer.appendChild(divQuestion);
 	while (<?php echo $nbReponseQuestion?> !=0){
 		  createMultipleChoiceRep(<?php $nbReponseQuestion?>);
-		  <?php $nbReponseQuestion--?>;
+		  <?php --$nbReponseQuestion?>;
 	}
 }
 
@@ -122,7 +122,7 @@ function createMultipleChoiceRep(compteur){
 	divRep.appendChild(inputRep);
 	divRep.appendChild(labelRep);
 	question.appendChild(divRep);	
-	<?php $nbReponseQuestion++?>;
+	<?php ++$nbReponseQuestion?>;
 	}
 
 </script>
