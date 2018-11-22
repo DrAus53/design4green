@@ -48,28 +48,28 @@ function myFunction(id) {
 	}
 }
 
-function createSingleChoice(){
+// function createSingleChoice(){
 	
-	var question = document.getElementById("question");
-	var div = question.appendChild(document.createElement("div"));
+// 	var question = document.getElementById("question");
+// 	var div = question.appendChild(document.createElement("div"));
 	div.innerHTML="<?php echo $q[1];?>"
 	
-	var divRep = question.appendChild(document.createElement("div"));
+// 	var divRep = question.appendChild(document.createElement("div"));
 	
 	"<?php $f = $q[3];   
-	   $tailleRep=count($f);
+// 	   $tailleRep=count($f);
 	?>";
 
 	for (i=1; i<<?php echo $tailleRep; ?>; i++) { 
-		var input = divRep.appendChild(document.createElement("input"));
-		input.type="radio";
+// 		var input = divRep.appendChild(document.createElement("input"));
+// 		input.type="radio";
 		input.innerHTML=<?php echo $f[i]; ?>
 		
-		var label=input.appendChild(document.createElement("label"));
-		label.innerHTML="yes"
-		var label=input.appendChild(document.createElement("label"));
-		label.innerHTML="no"
-	}
+// 		var label=input.appendChild(document.createElement("label"));
+// 		label.innerHTML="yes"
+// 		var label=input.appendChild(document.createElement("label"));
+// 		label.innerHTML="no"
+// 	}
 }
 
 </script>
