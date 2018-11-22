@@ -65,11 +65,11 @@ function changeQuestion() {
 	if(document.getElementById('description') != null){
 		document.getElementById('buttonNextDescription').innerHTML = "Next !";
 		document.getElementById('questionContainer').removeChild(document.getElementById('description'));
-		createQuestion(id);
+		createQuestion(<?php $idQuestion?>);
 	}
 	else if(document.getElementById('question') != null){
 		document.getElementById('questionContainer').removeChild(document.getElementById('question'));
-		createQuestion(id);
+		createQuestion(<?php $idQuestion?>);
 	}	
 }
 
