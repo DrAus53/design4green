@@ -46,7 +46,9 @@ $nbReponseQuestion = count($reponseQuestion);
 			</div>
 			</br>
 			<div class="flip" id="buttonNext">
-		      		<p id="buttonNextDescription" onclick="changeQuestion()">Let's do this ! :)</p>
+		      		<p id="buttonNextDescription" onclick="changeQuestion()">
+		      		Let's do this ! :)
+		      		</p>
 		    </div>
 	</form>
 	</div>
@@ -55,9 +57,8 @@ $nbReponseQuestion = count($reponseQuestion);
 		<h1>Footer</h1>
 		</div>
 	</div>
-</body>
-
-<script type="text/javascript">
+	
+	<script type="text/javascript">
 
 function changeQuestion() {
 	if(document.getElementById('description') != null){
@@ -124,4 +125,5 @@ function createMultipleChoiceRep(compteur){
 	}
 
 </script>
+</body>
 </html>
