@@ -73,7 +73,7 @@
 function myFunction() {
 	alert("tee");
  	var response = document.getElementById("interest");	
-	var questions = <?php $questions ?>
+	
 	
  /* 	if(questions[nextQuestion][0]=="single_choice"){
 		
