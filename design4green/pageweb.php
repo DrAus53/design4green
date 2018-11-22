@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <?php include ('dbread.php') ;
@@ -49,25 +48,25 @@ function myFunction(id) {
 }
 
 function createSingleChoice(){
-	
 	var question = document.getElementById("question");
 	var div = question.appendChild(document.createElement("div"));
-	div.innerHTML="<?php echo $q[1];?>"
-	
-	 	var divRep = question.appendChild(document.createElement("div"));
-		
-		"<?php $f = $q[3];   
+	div.innerHTML="<?php echo $q[1];?>"	
+	 	var divRep = question.appendChild(document.createElement("div"));		
+		"<?php $f = $q[2];
+		      echo (count($q[2]));
 	 	   $tailleRep=count($f);
 		?>";
-
-
-		for (i=1; i<<?php echo $tailleRep; ?>; i++) { 
-	 		
+		for (var i=0; i<=<?php echo $tailleRep-1; ?>; i++) { 
+	 		var input = divRep.appendChild(document.createElement("input"));
+	 		input.type="radio";	
 			
+		 		
+	 		var label=input.appendChild(document.createElement("label"));
+	 		label.innerHTML="yes"
+	 		var label=input.appendChild(document.createElement("label"));
+	 		label.innerHTML="no" 		
 		}
-
 }
-
 </script>
 </body>
 </html>
