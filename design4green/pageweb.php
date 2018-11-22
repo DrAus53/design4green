@@ -44,7 +44,7 @@ function myFunction(id) {
 	alert(test);
 	if(test=='single_choice'){
 		alert(test);
-		createSingleChoice();
+// 		createSingleChoice();
 	}
 }
 
