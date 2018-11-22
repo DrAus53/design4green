@@ -2,7 +2,8 @@
 
 <html>
 <head>
-<?php ('dbreadquestion.php') ;
+<?php include 'dbreadquestion.php' ;
+php echo $questions;
  ?>
 <style>
 #panel, .flip {
