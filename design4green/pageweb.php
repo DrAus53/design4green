@@ -28,7 +28,7 @@
 
  <div id="questionmultiple">
   <fieldset>
-  <div id="question">Bonjour</div>
+  <div id="question">HEU</div>
       <p class="flip" onclick='myFunction(1)'>Question suivante</p>
     </div>	
       </fieldset>
