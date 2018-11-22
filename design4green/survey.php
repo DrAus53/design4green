@@ -46,8 +46,7 @@ include ('dbread.php');
         
     	var question = document.getElementById("surveyQuestion");
     	var answer = document.getElementById("surveyAnswer");
-    	
-    	<?php $q=$questions[1];?>
+    	<?php $q=$questions[31];?>
     	question.innerHTML="<?php echo $q[1];?>";
 
     }
