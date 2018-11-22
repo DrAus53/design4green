@@ -5,12 +5,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php include ('dbwrite.php') ;
+<?php include ('dbread.php') ;
 $idQuestion = 1;
 $question = $questions[$idQuestion];
-$typeQuestion = $question[1];
-$intituleQuestion = $question[2];
-$reponseQuestion = $question[3];
+$typeQuestion = $question[0];
+$intituleQuestion = $question[1];
+$reponseQuestion = $question[2];
 $nbReponseQuestion = count($reponseQuestion);
  ?>
 <meta charset="utf-8">
@@ -46,7 +46,7 @@ $nbReponseQuestion = count($reponseQuestion);
 			</div>
 			</br>
 			<div class="flip" id="buttonNext">
-		      		<span id="buttonNextDescription" onclick="changeQuestion()">"Let's do this ! :)"</span>
+		      		<span id="buttonNextDescription" onclick="changeQuestion()">Let's do this ! :)</span>
 		    </div>
 	</form>
 	</div>
