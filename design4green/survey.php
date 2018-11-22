@@ -49,21 +49,22 @@ include ('dbread.php');
         
     	var question = document.getElementById("surveyQuestion");
     	var answer = document.getElementById("surveyAnswer");
+    	
 		if (compteur==1) {
 			<?php $q=$questions[1];?>
-			answer.innerHTML="dans if compt 1";
+	    	question.innerHTML="<?php echo $q[1];?>";
 		} else if (compteur==2) {
 			<?php $q=$questions[2];?>
-			answer.innerHTML="dans if compt 2";
+			question.innerHTML="<?php echo $q[1];?>";
 		} else if (compteur==3) {
 			<?php $q=$questions[3];?>
-			answer.innerHTML="dans if compt 3";
+			question.innerHTML="<?php echo $q[1];?>";
 		} else {
 	    	<?php $q=$questions[39];?>
-	    	answer.innerHTML="dans else";
+	    	question.innerHTML="<?php echo $q[1];?>";
 		}
-    	question.innerHTML="<?php echo $q[1];?>";
-    	//answer.innerHTML="compteur :"+compteur;
+
+    	answer.innerHTML="compteur :"+compteur;
     	compteur++;
 
     }
