@@ -64,7 +64,7 @@ function changeQuestion() {
 		console.log(document.getElementById('buttonNextDescription'));
 		document.getElementById('buttonNextDescription').innerHTML = "Next !";
 		document.getElementById('questionContainer').removeChild(document.getElementById('description'));
-		createQuestion(<?php echo $idQuestion?>
+		createQuestion(<?php echo $idQuestion?>);
 	}
 	else if(document.getElementById('question') != null){
 		document.getElementById('questionContainer').removeChild(document.getElementById('question'));
