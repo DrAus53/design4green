@@ -27,7 +27,7 @@
  
  	 <fieldset>
  		 <div id="questionn">sucess</div>
-    		  <p class="flip" onclick="myFunction(1)">Question suivante</p>
+    		  <p class="flip" onclick="myFunction(1)">Question suivantes</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
    			    <label for='o'> </label>		    
     </fieldset>
