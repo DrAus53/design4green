@@ -31,7 +31,7 @@
   <div id="question">Question °1 : </div>
    
       <input type="radio" id="question" name="interest" value='$test'>
-      <label for="coding">Ques</label>
+      <label for="coding"><?php echo $questions ?></label>
      
     <div>
       <input type="radio" id="question" name="interest" value="IdDeLaReponse">
