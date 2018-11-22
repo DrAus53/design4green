@@ -46,7 +46,7 @@ $nbReponseQuestion = count($reponseQuestion);
 			</div>
 			</br>
 			<div class="flip" id="buttonNext">
-		      		<p id="buttonNextDescription" onclick="changeQuestion(<?php $idQuestion?>)">
+		      		<p id="buttonNextDescription" onclick="changeQuestion()">
 		      		Let's do this ! :)
 		      		</p>
 		    </div>
@@ -61,7 +61,7 @@ $nbReponseQuestion = count($reponseQuestion);
 
 <script type="text/javascript">
 
-function changeQuestion(id) {
+function changeQuestion() {
 	if(document.getElementById('description') != null){
 		document.getElementById('buttonNextDescription').innerHTML = "Next !";
 		document.getElementById('questionContainer').removeChild(document.getElementById('description'));
