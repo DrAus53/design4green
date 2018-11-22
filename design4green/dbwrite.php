@@ -95,7 +95,8 @@ function registerSurveyResult() {
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        //$stmtInsert = $conn->prepare("SELECT id, type_reponse, valeur FROM Question");
+        $stmtInsert = $conn->prepare("INSERT INTO Questionnaire(titre) VALUES ('test')");
+        $stmtInsert->execute();
         $msgFunc = "success";
     }
     catch(PDOException $e)
