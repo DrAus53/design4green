@@ -26,7 +26,7 @@ include ('dbread.php');
 
 <body>
 
-	$compteur = 39;
+	<?php $compteur = 39; ?>
 	
 	<form>
 		<br>
