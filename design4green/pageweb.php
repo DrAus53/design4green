@@ -3,6 +3,7 @@
 <html>
 <head>
 <?php include ('dbreadquestion.php') ;
+ echo $questions ;
  ?>
 <style>
 #panel, .flip {
@@ -24,8 +25,6 @@
 <p onclick="myFunction()"></p>
 
 <form>
-
-
  <div id="questionmultiple">
  	 <fieldset>
  		 <div id="question">success</div>
@@ -73,7 +72,7 @@
 function myFunction() {
 	alert("tee");
  	var response = document.getElementById("interest");	
-	<?php echo $questions ;?>
+	
 	
  /* 	if(questions[nextQuestion][0]=="single_choice"){
 		
