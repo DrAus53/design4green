@@ -48,7 +48,7 @@ try {
         echo $requete;
         echo '<br/>'."\n";
         echo $idQ;
-        echo "/n";
+        echo '<br/>'."\n";
         $stmtReponse = $conn->prepare($requete);
         $stmtReponse->execute();
         $reponses = [];
