@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<?php include ('dbread.php');
+<?php include ('dbread.php') ;
  ?>
 <style>
 #panel, .flip {
@@ -32,7 +32,7 @@
    			    <label for='o'> </label>		    
     </fieldset>
   </div>
- 
+    
 <div id="question">
  
 
@@ -44,32 +44,25 @@ function myFunction(id) {
 	alert(test);
 	if(test=='single_choice'){
 		alert(test);
-// 		createSingleChoice();
+		createSingleChoice();
 	}
 }
 
-// function createSingleChoice(){
+function createSingleChoice(){
 	
-// 	var question = document.getElementById("question");
-// 	var div = question.appendChild(document.createElement("div"));
+	var question = document.getElementById("question");
+	var div = question.appendChild(document.createElement("div"));
 	div.innerHTML="<?php echo $q[1];?>"
 	
-// 	var divRep = question.appendChild(document.createElement("div"));
+	var divRep = question.appendChild(document.createElement("div"));
 	
-	"<?php $f = $q[3];   
-// 	   $tailleRep=count($f);
-	?>";
-
-	for (i=1; i<<?php echo $tailleRep; ?>; i++) { 
-// 		var input = divRep.appendChild(document.createElement("input"));
-// 		input.type="radio";
-		input.innerHTML=<?php echo $f[i]; ?>
+	var input = divRep.appendChild(document.createElement("input"));
+	input.type="radio"
+	var label=input.appendChild(document.createElement("label"));
+	label.innerHTML="yes"
 		
-// 		var label=input.appendChild(document.createElement("label"));
-// 		label.innerHTML="yes"
-// 		var label=input.appendChild(document.createElement("label"));
-// 		label.innerHTML="no"
-// 	}
+
+
 }
 
 </script>
