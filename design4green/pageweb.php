@@ -21,14 +21,14 @@
 </style>
 </head>
 <body>
-<p onclick="myFunction()"><?php echo $questions ?></p>
+<p onclick="myFunction()"></p>
 
 <form>
 
 
  <div id="questionmultiple">
   <fieldset>
-  <div id="question">suc</div>
+  <div id="question">success</div>
       <p class="flip" onclick='myFunction(1)'>Question suivante</p>
     </div>	
       </fieldset>
@@ -69,6 +69,7 @@
 </form>
 <script>
 function myFunction(nextQuestion) {
+	alert(nextQuestion);
 	var response = document.getElementById("interest");	
 	var questions = <?php $question ?>
 	
