@@ -47,7 +47,7 @@ try {
         $idQ = $donnesQuestion['id'];
         echo "id Question =" + $idQ + "\n";
         $state = "question n° " + $idQ ;
-        $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=" + $idQ;
+        $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=1";
         echo $requete + "\n";
         $state = "question n° " + $idQ + "\n requete \n" + $requete;
         $stmtReponse = $conn->prepare($requete);
