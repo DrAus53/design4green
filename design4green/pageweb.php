@@ -26,7 +26,7 @@
 <form>
  <div id="questionultiple">
  	 <fieldset>
- 		 <div id="question">sucess</div>
+ 		 <div id="questionn">sucess</div>
     		  <p class="flip" onclick="myFunction()">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
    			    <label for='o'> <?php echo $($questions[2])[1]; ?> </label>
