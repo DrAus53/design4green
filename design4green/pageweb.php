@@ -72,10 +72,11 @@
 </form>
 <script>
 function myFunction(id) {
-	alert(id);
+	alert("");
+	
  	/* var response = document.getElementById("interest");	 */
 	
-	if(/* 
+	/* 
  	questions[nextQuestion][0]=="single_choice"){
 		
 	 		var node = document.getElementById("questionmultiple");
