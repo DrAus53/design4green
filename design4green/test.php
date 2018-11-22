@@ -102,6 +102,7 @@ function createMultipleQuestion(){
 	divQuestion.appendChild(sautLigne);
 	questionContainer.appendChild(divQuestion);
 	for (var i= 0; i < <?php echo $nbReponseQuestion?> ; i++){
+		console.log(<?php $val=$reponseQuestion[i]; echo $val?>);
 		  createMultipleChoiceRep();
 	}
 }
@@ -109,7 +110,7 @@ function createMultipleQuestion(){
 function createMultipleChoiceRep(){
 	var compteur = 1;
 	var question = document.getElementById('question');
-	console.log(<?php $val=$reponseQuestion[compteur]; echo $val?>);
+	
 	var divRep = document.createElement("div");
 	divRep.id = "reponse"+compteur;
 	var inputRep = document.createElement("input");
