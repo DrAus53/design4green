@@ -26,7 +26,7 @@ include ('dbread.php');
 
 <body>
 
-	<?php $compteur = 39; ?>
+	<?php $compteur = 1; ?>
 	
 	<form>
 		<br>
@@ -38,6 +38,9 @@ include ('dbread.php');
 		<br>
 		<div id="surveyNext">
 			<p class="flip" onclick="displayQuestion()">Next Question</p>
+		</div>
+		<div id="surveyIncrement">
+			<p class="flip" onclick="<?php $compteur++ ?>">Increment</p>
 		</div>
 		
 	</form>
