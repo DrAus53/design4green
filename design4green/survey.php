@@ -37,7 +37,7 @@ include ('dbread.php');
 		</div>
 		<br>
 		<div id="surveyNext">
-			<p class="flip" onclick="myFunction(1)">Next Question</p>
+			<p class="flip" onclick="myFunction(<?php echo $compteurQuestion;?>)">Next Question</p>
 		</div>
 		
 	</form>
