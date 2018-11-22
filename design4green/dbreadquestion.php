@@ -47,7 +47,7 @@ try {
         $idQ = $donnesQuestion['id'];
         echo "id Question =" + $idQ + "\n";
         $state = "question n° " + $idQ ;
-        $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=1";
+        $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=" + intval($idQ);
         echo $requete + "\n";
         $state = "question n° " + $idQ + "\n requete \n" + $requete;
         $stmtReponse = $conn->prepare($requete);
@@ -57,7 +57,12 @@ try {
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
             echo "while 2";
-            $reponses[] = array($donnesReponse['id'], $donnesReponse['id_quest_suiv'], $donnesReponse['valeur'], $donnesReponse['champ_select'], $donnesReponse['champ_texte']);
+            $reponses[] = array(
+                $donnesReponse['id'],
+                $donnesReponse['id_quest_suiv'], 
+                $donnesReponse['valeur'], 
+                $donnesReponse['champ_select'], 
+                $donnesReponse['champ_texte']);
         }
         $questions[$idQ] = array(
             $donnesQuestion['type_reponse'],
