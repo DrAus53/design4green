@@ -85,7 +85,7 @@ try {
 $conn = null;
 
 function registerSurveyResult() {
-    $msgFunc="atchoum";
+    $msgFunc = "atchoum";
     return $msgFunc;
 }
 
@@ -93,7 +93,7 @@ function registerSurveyResult() {
 
 <script>
 function sendSurveyResult() {
-    var msgFunc = <?php registerSurveyResult();?>;
+    var msgFunc = <?php registerSurveyResult();?>
     document.getElementById("surveySaveLink").innerHTML = "Use this link to fill the survey later : http://vps612249.ovh.net";
 }
 </script>
