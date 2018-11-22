@@ -24,7 +24,7 @@ try {
         
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
-            $reponses[] = array(
+            $reponses[$idQ] = array(
                 $donnesReponse['id'],
                 $donnesReponse['id_quest_suiv'],
                 $donnesReponse['valeur'],
