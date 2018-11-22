@@ -42,8 +42,11 @@ try {
             }
             else {
                 echo '&nbsp';
+                if (true) {
+                    echo $donnesReponse['valeur'];
+                    echo '&nbsp';
+                }
                 echo '<input type="checkbox" name="test" value="value">';
-                echo $donnesReponse['valeur'];
                 echo '&nbsp';
                 echo $donnesReponse['champ_select'];
                 echo '<br/>'."\n";
