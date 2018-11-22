@@ -101,13 +101,12 @@ function createMultipleQuestion(){
 	divQuestion.appendChild(labelQuestion);
 	divQuestion.appendChild(sautLigne);
 	questionContainer.appendChild(divQuestion);
-	while (<?php echo $nbReponseQuestion?> !=0){
-		  createMultipleChoiceRep(<?php $nbReponseQuestion?>);
-		  <?php $nbReponseQuestion--?>;
+	for (var i= 0; i < <?php echo $nbReponseQuestion?> ; i++){
+		  createMultipleChoiceRep(<?php echo $nbReponseQuestion?>);
 	}
 }
 
-function createMultipleChoiceRep(compteur){
+function createMultipleChoiceRep(var compteur){
 	var question = document.getElementById('question');
 	console.log(question);
 	var divRep = document.createElement("div");
@@ -118,11 +117,10 @@ function createMultipleChoiceRep(compteur){
 	inputRep.id = ("checkbox"+compteur);
 	var labelRep = document.createElement('label');
 	labelRep.htmlFor = "reponse"+compteur;
-	labelRep.appendChild(document.createTextNode(<?php echo $reponseQuestion[$nbReponseQuestion]?>));
+	labelRep.appendChild(document.createTextNode(<?php echo $reponseQuestion[compteur]?>));
 	divRep.appendChild(inputRep);
 	divRep.appendChild(labelRep);
-	question.appendChild(divRep);	
-	<?php $nbReponseQuestion++?>;
+	question.appendChild(divRep);
 	}
 
 </script>
