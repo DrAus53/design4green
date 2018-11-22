@@ -72,7 +72,7 @@
 </form>
 <script>
 function myFunction(id) {
-	alert("");
+	alert(id);
 	
  	/* var response = document.getElementById("interest");	 */
 	
