@@ -102,7 +102,7 @@ function createMultipleQuestion(){
 	divQuestion.appendChild(sautLigne);
 	questionContainer.appendChild(divQuestion);
 	for (var i= 0; i < <?php echo $nbReponseQuestion?> ; i++){
-		  createMultipleChoiceRep(<?php $nbReponseQuestion?>);
+		  createMultipleChoiceRep(<?php echo $nbReponseQuestion?>);
 	}
 }
 
