@@ -37,14 +37,14 @@ include ('dbread.php');
 		</div>
 		<br>
 		<div id="surveyNext">
-			<p class="flip" onclick="myFunction(<?php echo $compteurQuestion;?>)">Next Question</p>
+			<p class="flip" onclick="displayQuestion()">Next Question</p>
 		</div>
 		
 	</form>
 
 	<script>
 	
-    function myFunction(id) {
+    function displayQuestion() {
     	var question = document.getElementById("surveyQuestion");
     	<?php $q=$questions[$compteurQuestion];?>
     	question.innerHTML="<?php echo $q[1];?>";
