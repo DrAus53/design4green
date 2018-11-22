@@ -22,7 +22,6 @@
 </head>
 <body>
 <p onclick="myFunction()"></p>
-
 <form>
  <div id="questionultiple">
  	 <fieldset>
@@ -33,72 +32,36 @@
 					 $q = $questions[1]; echo $q[1];?></label>		    
     </fieldset>
   </div>
-  	   
-<!-- <div id="value<label for='o'> <php echo $($questions[1])[0]; ?> </label>"> -->
-<!--  	<fieldset> -->
-<!--   <legend> Question </legend>  -->
-<!--       <input type="text" id="coding" name="interest" value="idDeLaReponse"> -->
-<!--       </fieldset> -->
-<!--     </div>	 -->
     
-<!-- <div id="questionm"> -->
-<!--  <fieldset> -->
-<!--   <legend> Question °3 : </legend>  -->
-<!--      <div id="sq"> -->
-<!--       <label> SQ </label> -->
-<!--       <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
-<!--       <label for='o'> Oui </label> -->
-<!--       <input type="radio" id="o" name="interest" value="idDeLaReponse"> -->
-<!--       <label for ='o'> No </label> -->
-<!--       <input type="radio" id="o" name="interest" value="idDeLaReponse"> -->
-<!--       <label for='o'> NoIdea </label> -->
-<!--       </div> -->
-      
-<!--       <div id="sq"> -->
-<!--       <label> SQs </label> -->
-<!--       <input type="radio" id="o" name="interest" value="idDeLaReponse"> -->
-<!--       <input type="radio" id="o" name="interest" value="idDeLaReponse"> -->
-<!--       <input type="radio" id="o" name="interest" value="idDeLaReponse"> -->
-<!--       </div> -->
-      
-<!--      <div> -->
-      <!--  <p class="flip" onclick="myFunction()">Question suivante</p>-->
-<!--       </div> -->
-    
-<!--       </fieldset> -->
-<!--     </div>	  --> 
+<div id="question">
+ 
+
 </form>
 <script>
 function myFunction(id) {
 	alert(id);
-	var test = "<?php echo $q[1] ;?>"
-	alert(test)
-	
-	
- 	/* var response = document.getElementById("interest");	 */
-	
-	/* 
- 	questions[nextQuestion][0]=="single_choice"){
-		
-	 		var node = document.getElementById("questionmultiple");
- 		for(int i=0;i<questions[nextQuestion][2].length;i++){		
-			
- 			var newlabel = document.createElement("Label");
- 			newlabel.innerHTML = (questions[nextQuestion][2])[2];	
- 			node.innerHTML=newlabel.innerHTML;		
- 		}	
-	}  */
-	
-// 	if(nextReponse[1]=="value"){
-		
-// 		var node = document.getElementById("questionmultiple");
-// 		for(int i=0;i<variableRecuperee[3].length;i++){					
-// 			var newlabel = document.createElement("Input");
-// 			newlabel.innerHTML = '';	
-// 			node.innerHTML=newlabel.innerHTML;		
-// 		}	
-// 	}
+	var test = "<?php echo $q[0] ;?>"
+	if(test=="single_choice"){
+		createSingleChoice();
+	}
 }
+
+function createSingleChoice(){
+	var question = document.getElementById("question");
+	var div = question.appendChild(document.createElement("div"));
+	div.innerHTML="<?php echo $q[1];?>"
+	
+	var divRep = question.appendChild(document.createElement("div"));
+	
+	var input = divRep.appendChild(document.createElement("input"));
+	input.type="radio"
+	var label=input.appendChild(document.createElement("label"));
+	label.innerHTML="yes"
+		
+
+
+}
+
 </script>
 </body>
 </html>
