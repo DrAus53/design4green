@@ -94,7 +94,7 @@ function createMultipleQuestion(){
 	divQuestion.id = "question";
 	divQuestion.style = "hidden";
 	var labelQuestion = document.createElement("h4");
-	var textLabel = document.createTextNode(<?php echo $question[$idQuestion]?>);
+	var textLabel = document.createTextNode("<?php echo $question[$idQuestion]?>");
 	labelQuestion.appendChild(textLabel);
 	labelQuestion.setAttribute("id", "labelQuestion");
 	var sautLigne = document.createElement("br");
