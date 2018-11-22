@@ -64,7 +64,7 @@ $nbReponseQuestion = count($reponseQuestion);
 	<div id="header" class="row">
 		<div class="header">
 			<h2 class="title">
-				Baromètre des pratiques Green IT des entreprises en France 2018
+				BaromÃ¨tre des pratiques Green IT des entreprises en France 2018
 			</h2>
 		</div>
 	</div>
@@ -75,14 +75,14 @@ $nbReponseQuestion = count($reponseQuestion);
 			      <h4>Description :</h4>
 			      </br>
 			      	<p>
-			      	L’alliance Green IT diffuse tous les deux ans un questionnaire afin d’évaluer la maturité des
-			entreprises françaises en matière de mise en place de services numériques écoresponsables. Ce
-			questionnaire est diffusé par l’AGIT et l’ensemble de ses partenaires durant 3 mois, du 1er janvier au
+			      	Lâ€™alliance Green IT diffuse tous les deux ans un questionnaire afin dâ€™Ã©valuer la maturitÃ© des
+			entreprises franÃ§aises en matiÃ¨re de mise en place de services numÃ©riques Ã©coresponsables. Ce
+			questionnaire est diffusÃ© par lâ€™AGIT et lâ€™ensemble de ses partenaires durant 3 mois, du 1er janvier au
 			31 mars.
-			Il se compose de différentes questions qui reprennent les 8 grandes thématiques du Green IT – Les
+			Il se compose de diffÃ©rentes questions qui reprennent les 8 grandes thÃ©matiques du Green IT â€“ Les
 			infrastructures informatiques, le datacenter, les achats, les postes de travail, la fin de vie des
-			équipements, la gouvernance, l’impression et les applications.
-			Les réponses du questionnaire sont ensuite collectées, pondérées, compilées et analysées, donnant lieu à la création d’un Rapport détaillé.
+			Ã©quipements, la gouvernance, lâ€™impression et les applications.
+			Les rÃ©ponses du questionnaire sont ensuite collectÃ©es, pondÃ©rÃ©es, compilÃ©es et analysÃ©es, donnant lieu Ã  la crÃ©ation dâ€™un Rapport dÃ©taillÃ©.
 			      	</p>
 			   	</div>
 			</div>
@@ -97,10 +97,6 @@ $nbReponseQuestion = count($reponseQuestion);
 		<h1>Footer</h1>
 		</div>
 	</div>
-	
-	<div class="flip" id="buttonNext">
-		      		<span id="buttonNextQuestion" onclick="changeQuestion()">"Let's do this ! :)"</span>
-		    </div>
 </body>
 
 <script>
