@@ -72,7 +72,7 @@
 </form>
 <script>
 function myFunction(id) {
-	alert("tee");
+	alert(id);
  	/* var response = document.getElementById("interest");	 */
 	
 	if(/* 
