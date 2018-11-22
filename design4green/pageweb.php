@@ -24,14 +24,14 @@
 <p onclick="myFunction()"></p>
 
 <form>
- <div id="questionmultiple">
+ <div id="questionultiple">
  	 <fieldset>
- 		 <div id="question">success</div>
+ 		 <div id="question">sucess</div>
     		  <p class="flip" onclick="myFunction()">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
    			    <label for='o'> <?php echo count($questions); ?> </label>
    			    <label for='o'> <?php echo $questions[0]; ?> </label>
-   			     <label for='o'> <?php echo $questions[0]=="single_choice"; ?> </label>
+   			    
     </fieldset>
   </div>
   	   
