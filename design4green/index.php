@@ -180,8 +180,9 @@ function createQuestionValue(){
 			for (var i=0; i<=<?php echo $tailleRep-1; ?>; i++) { 
 		 		var input = divRep.appendChild(document.createElement("input"));
 		 		input.setAttribute("type", "text");
-		 		input.setAttribute("id", <?php echo $f[i][0]?>i);
-		 		input.setAttribute("name", <?php echo $f[i][0]?>i);
+		 		input.setAttribute("id", <?php $idRep = $f[i][0] + $f[i][1]; echo $idRep?>);
+		 		input.setAttribute("name", <?php echo $f[i][2]?>);
+		 		alert( <?php echo $f[i][2]?>);
 			}
 
 }
