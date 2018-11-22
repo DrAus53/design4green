@@ -157,7 +157,7 @@ function afficher_conclusion() {
 	}
 
 function myFunction(id) {
-	var typeQuestion =  "<?php echo $q[0];?>
+	var typeQuestion =  "<?php echo $q[0];?>";
 	if(typeQuestion=='single_choice'){
 		alert(typeQuestion);
 		createSingleChoice();
