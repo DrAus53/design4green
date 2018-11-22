@@ -53,7 +53,6 @@ try {
                 echo $donnesReponse['champ_select'];
                 echo '<br/>'."\n";
             }
-
         }
         $questions[$idQ] = array(
             $donnesQuestion['type_reponse'],
