@@ -55,7 +55,7 @@ function createSingleChoice(){
 		"<?php $f = $q[2];
 		      echo (count($q[2]));
 	 	   $tailleRep=count($f);
-		?>";
+		?>" ;
 		for (var i=0; i<=<?php echo $tailleRep-1; ?>; i++) { 
 	 		var input = divRep.appendChild(document.createElement("input"));
 	 		input.type="radio";
