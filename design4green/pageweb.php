@@ -24,7 +24,6 @@
 <p onclick="myFunction()"></p>
 <form>
  <div id="questionultiple">
- 
  	 <fieldset>
  		 <div id="questionn">sucess</div>
  		 <?php $q=$questions[1];?>
@@ -50,7 +49,7 @@ function myFunction(id) {
 }
 
 function createSingleChoice(){
-	document.getElementById('questionultiple').removeChild(document.getElementById('questionn'));
+	
 	var question = document.getElementById("question");
 	var div = question.appendChild(document.createElement("div"));
 	div.innerHTML="<?php echo $q[1];?>"
