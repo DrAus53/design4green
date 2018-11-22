@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <style>
@@ -12,56 +13,68 @@
     margin: auto;
 }
 
-#panel {
+#panel,#question2 {
     display: none;
 }
 </style>
 </head>
 <body>
-<p class="flip" onclick="myFunction()">Question</p>
+<p onclick="myFunction()">Question</p>
 <form>
+ <div id="test">
   <fieldset>
-  <legend>Veuillez sélectionner vos intérêts</legend>
-    <div>
-      <input type="checkbox" id="coding" name="interest" value="coding">
+  <legend>Question °1 : </legend>
+   
+      <input type="radio" id="question" name="interest" value="coding">
       <label for="coding">Oui</label>
-    </div>
+    
     <div>
-      <input type="checkbox" id="music" name="interest" value="music">
+      <input type="radio" id="question" name="interest" value="music">
       <label for="music">Non</label>
     </div>
     <div>
       <p class="flip" onclick="myFunction()">Question suivante</p>
     </div>	
-  </fieldset>
-   
+      </fieldset>
+    </div>
+
+  
+ 
+<div id="question2">
+ <fieldset>
+  <legend> Question °2 : </legend> 
+      <input type="radio" id="coding" name="interest" value="coding">
+      <label for="coding">Oui</label>
+    
+    <div>
+      <input type="radio" id="oo" name="interest" value="oo">
+      <label for="ooo">Non</label>
+    </div>
+     <div>
+      <p class="flip">Question suivante</p>
+      </div>
+      </fieldset>
+    </div>	  
 </form>
-<div id="panel">
-  <p>Next Question</p>
-</div>
-<div id="text">
-  <p>Next Question</p>
-</div>
-</body>
-</html>
+
+
 <script>
 var otherCheckbox = document.querySelector('input[value="music"]');
 var otherText = document.querySelector('input[id="otherValue"]')
 otherText.style.visibility = 'hidden';
 otherCheckbox.onchange = function() {
   if(otherCheckbox.checked) {
-    alert(otherCheckbox.value);
 	otherText.style.visibility = 'visible';
+	document.getElementById("question2").style.display = "block";
   } 
 };
 function myFunction() {
-	if(otherCheckbox.checked){
-    document.getElementById("panel").style.display = "block";
-	}
-
+	  if(otherCheckbox.checked) {
+		  
+		 document.getElementById('test').innerHTML = document.getElementById('question2').innerHTML;
+   	 	
+	  }
 }
-
-
 </script>
-
-
+</body>
+</html>
