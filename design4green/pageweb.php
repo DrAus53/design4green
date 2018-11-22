@@ -2,8 +2,7 @@
 
 <html>
 <head>
-<?php include ('dbreadquestion.php') ;
- ?>
+
 <style>
 #panel, .flip {
     font-size: 16px;
@@ -30,6 +29,8 @@
  	 <fieldset>
  		 <div id="question">success</div>
     		  <p class="flip" onclick="myFunction()">Question suivante</p>
+    		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
+   			    <label for='o'> Oui </label>
     </fieldset>
   </div>
   	   
@@ -71,7 +72,7 @@
 function myFunction() {
 	alert("te");
 // 	var response = document.getElementById("interest");	
-	var questions = <?php $question ?>
+	
 	
 // 	if(questions[nextQuestion][0]=="single_choice"){
 		
