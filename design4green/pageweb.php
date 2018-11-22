@@ -2,7 +2,8 @@
 
 <html>
 <head>
-
+<?php include ('dbreadquestion.php') ;
+ ?>
 <style>
 #panel, .flip {
     font-size: 16px;
