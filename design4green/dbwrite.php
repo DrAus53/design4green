@@ -24,6 +24,7 @@ try {
         echo '<br/>'."\n";
         echo $donnesQuestion['valeur'];
         echo '<br/>'."\n";
+        echo '<br/>'."\n";
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
             $reponses[] = array(
@@ -32,13 +33,22 @@ try {
                 $donnesReponse['valeur'],
                 $donnesReponse['champ_select'],
                 $donnesReponse['champ_texte']);
-            echo '<br/>'."\n";
-            echo '&nbsp';
-            echo '<input type="checkbox" name="test" value="value">';
-            echo $donnesReponse['valeur'];
-            echo '&nbsp';
-            echo $donnesReponse['champ_select'];
-            echo '<br/>'."\n";
+            
+            if ($donnesReponse['champ_select']==null) {
+                echo '&nbsp';
+                echo '<input type="checkbox" name="test" value="value">';
+                echo $donnesReponse['valeur'];
+                echo '<br/>'."\n";
+            }
+            else {
+                echo '&nbsp';
+                echo '<input type="checkbox" name="test" value="value">';
+                echo $donnesReponse['valeur'];
+                echo '&nbsp';
+                echo $donnesReponse['champ_select'];
+                echo '<br/>'."\n";
+            }
+
         }
         $questions[$idQ] = array(
             $donnesQuestion['type_reponse'],
