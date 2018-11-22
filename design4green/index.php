@@ -52,6 +52,20 @@ $nbReponseQuestion = count($reponseQuestion);
 					this !</p>
 			</div>
 		</form>
+		<form>
+			<div id="questionultiple">
+				<fieldset>
+					<div id="questionn">sucess</div>
+ 		 <?php $q=$questions[5];?>
+    		  <p class="flip" onclick="myFunction(5)">Question suivantes</p>
+					<input type="radio" id="o" name="interest" value="idDeLaReponse">
+					--> <label for='o'> </label>
+				</fieldset>
+			</div>
+
+			<div id="question">
+		
+		</form>
 		<footer>
 			<div id="footer" class="columns"
 				style="margin-top: 5%; margin-left: 10%; margin-right: 10%";>
@@ -140,6 +154,38 @@ function afficher_conclusion() {
 	questioncontainer.style.display = "none";
 	conclusionContainer.style.display = "block";
 	}
+
+function myFunction(id) {
+	alert(id);
+	var typeQuestion =  "<?php echo $q[0] ;?>"
+	alert(test);
+	if(typeQuestion=='single_choice'){
+		alert(typeQuestion);
+		createSingleChoice();
+	} else if(typeQuestion=='value'){
+		createQuestionVelue()
+	}
+}
+
+function createQuestionVelue(){
+		var question = document.getElementById("question");
+		var div = question.appendChild(document.createElement("div"));
+		div.innerHTML="<?php echo $q[1];?>"	
+		 	var divRep = question.appendChild(document.createElement("div"));		
+			"<?php
+
+$f = $q[2];
+echo (count($q[2]));
+$tailleRep = count($f);
+?>" ;
+			for (var i=0; i<=<?php echo $tailleRep-1; ?>; i++) { 
+		 		var input = divRep.appendChild(document.createElement("input"));
+		 		input.setAttribute("type", "text");
+		 		input.setAttribute("id", <?php echo $f[i][0]?>i);
+		 		input.setAttribute("name", <?php echo $f[i][0]?>i);
+			}
+
+}
 
 </script>
 </html>
