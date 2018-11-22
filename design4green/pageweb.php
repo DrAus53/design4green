@@ -27,7 +27,7 @@
  <div id="questionultiple">
  	 <fieldset>
  		 <div id="question"><?php $q = $questions[1]; echo $q[1]; ?></div>
-    		  <p class="flip" onclick="myFunction(1)">Question suivante</p>
+    		  <p class="flip" onclick="myFunction()">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
    			    <label for='o'> </label>
    			  
@@ -70,18 +70,18 @@
 <!--     </div>	  --> 
 </form>
 <script>
-function myFunction(id) {
+function myFunction() {
 	alert("tee");
  	/* var response = document.getElementById("interest");	 */
 	
 	
- 	<?php 
-		$q = $questions[id];
-		if($q[1]=="single_choice"){
-	 		echo "test";	
- 		}	
-	}  
-	?>
+ //	<?php 
+// 		$q = $questions[id];
+// 		if($q[1]=="single_choice"){
+// 	 		echo "test";	
+//  		}	
+// 	}  
+// 	?>
 	
 // 	if(nextReponse[1]=="value"){
 		
