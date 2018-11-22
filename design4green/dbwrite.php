@@ -93,7 +93,7 @@ function registerSurveyResult() {
 
 <script>
 function sendSurveyResult() {
-    var msgFunc = "test"+<?php registerSurveyResult();?>
+    var msgFunc = "<?php registerSurveyResult();?>"
     document.getElementById("surveySaveLink").innerHTML = "Use this link to fill the survey later : http://vps612249.ovh.net "+msgFunc;
 }
 </script>
