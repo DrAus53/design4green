@@ -40,12 +40,16 @@ try {
     $questions = array();
     // set the resulting array to associative
     $result = $stmtQuestion->setFetchMode(PDO::FETCH_ASSOC);
+    $state = "init";
     while ($donnesQuestion = $stmtQuestion->fetch()) {
         echo "while 1 \n";
+        $state = "while1";
         $idQ = $donnesQuestion['id'];
         echo "id Question =" + $idQ + "\n";
+        $state = "question n° " + $idQ ;
         $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=" + $idQ;
         echo $requete + "\n";
+        $state = "question n° " + $idQ + "\n requete \n" + $requete;
         $stmtReponse = $conn->prepare($requete);
         $stmtReponse->execute();
         $reponses = [];
@@ -63,6 +67,7 @@ try {
     }
     echo $questions;
 } catch (PDOException $e) {
+    echo $state + "\n";
     echo "Error: " . $e->getMessage();
 }
 $conn = null;
