@@ -24,7 +24,7 @@
 <p onclick="myFunction()"></p>
 
 <form>
- <div id="questionmultiple">
+ <div id="questionultiple">
  	 <fieldset>
  		 <div id="question">success</div>
     		  <p class="flip" onclick="myFunction()">Question suivante</p>
