@@ -103,12 +103,11 @@ function createMultipleQuestion(){
 	questionContainer.appendChild(divQuestion);
 	for (var i= 1; i <= <?php echo $nbReponseQuestion?> ; i++){
         <?php echo "console.log('" , $question[2][2][2] , "');" ?>
-		  createMultipleChoiceRep();
+		  createMultipleChoiceRep(i);
 	}
 }
 
-function createMultipleChoiceRep(){
-	var compteur = 1;
+function createMultipleChoiceRep(compteur){
 	var question = document.getElementById('question');
 	var divRep = document.createElement("div");
 	divRep.id = "reponse"+compteur-1;
@@ -118,8 +117,7 @@ function createMultipleChoiceRep(){
 	inputRep.id = ("checkbox"+compteur);
 	var labelRep = document.createElement('label');
 	labelRep.htmlFor = "reponse"+compteur-1;
-	var intitule = document.createTextNode("coucou");
-	labelRep.appendChild(document.createTextNode("coucou"));
+	labelRep.appendChild(document.createTextNode("<?php echo $$question[compteur][2][2]?>"));
 	divRep.appendChild(inputRep);
 	divRep.appendChild(labelRep);
 	question.appendChild(divRep);
