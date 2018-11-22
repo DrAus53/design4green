@@ -28,6 +28,7 @@ try {
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
             $compteur=0;
+            
             $reponses[] = array(
                 $donnesReponse['id'],
                 $donnesReponse['id_quest_suiv'],
