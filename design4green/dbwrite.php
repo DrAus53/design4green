@@ -85,7 +85,7 @@ try {
 $conn = null;
 
 function registerSurveyResult() {
-    return "Atchoum";
+    return 666;
 }
 
 ?>
