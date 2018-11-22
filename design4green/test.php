@@ -120,8 +120,7 @@ function createMultipleChoiceRep(compteur){
 	labelRep.appendChild(document.createTextNode(<?php echo $reponseQuestion[$nbReponseQuestion]?>));
 	divRep.appendChild(inputRep);
 	divRep.appendChild(labelRep);
-	question.appendChild(divRep);	
-	<?php ++$nbReponseQuestion?>;
+	question.appendChild(divRep);
 	}
 
 </script>
