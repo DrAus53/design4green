@@ -1,11 +1,19 @@
 <?php
 
 echo '<br/>'."\n";
-echo '<center><strong>Questionnaire</strong>';
+echo '<center><strong>Brocos Team Survey</strong>';
 echo '<br/>'."\n";
 echo '<br/>'."\n";
-echo '<button type="button">Save the survey</button></center>';
+echo '<input type="button" name="testSaveSurvey" id="testSaveSurvey" value="Save it" /></center>';
 echo '<br/>'."\n";
+
+function testfun()
+{
+    echo "Your test function on button click is working";
+}
+if(array_key_exists('testSaveSurvey',$_POST)){
+    testfun();
+}
 
 $servername = "localhost";
 $username = "damien";
@@ -69,7 +77,7 @@ try {
             $reponses
         );
     }
-    echo $questions;
+
 } catch (PDOException $e) {
     echo $state + "\n";
     echo "Error: " . $e->getMessage();
