@@ -11,12 +11,9 @@ echo '<center><strong>Brocos Team Survey</strong>';
 echo '<br/>' . "\n";
 echo '<br/>' . "\n";
 ?>
-
 <button onclick="sendSurveyResult()">Save it</button>
 	<p id="surveySaveLink"></p>
-	
 <?php
-
 echo '</center><br/>' . "\n";
 
 $servername = "localhost";
@@ -29,6 +26,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmtQuestion = $conn->prepare("SELECT id, type_reponse, valeur FROM Question");
     $stmtQuestion->execute();
+
     $state = "init";
     $reponsePreced = "";
     while ($donnesQuestion = $stmtQuestion->fetch()) {
@@ -62,6 +60,7 @@ try {
             }
         }
         echo '<br/>' . "\n";
+
     }
 } catch (PDOException $e) {
     echo $state + "\n";
@@ -70,17 +69,18 @@ try {
 
 function registerSurveyResult($conn)
 {
-    $randomTitle = "save" . rand(1001, 9999);
+
+    $randomTitle = "save" . rand(1000, 9999);
+
     try {
         $stmtInsert = $conn->prepare("INSERT INTO Questionnaire(titre) VALUES ('" . $randomTitle . "')");
         $stmtInsert->execute();
     } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     }
+
     return $randomTitle;
 }
-
-$conn = null;
 
 ?>
 
