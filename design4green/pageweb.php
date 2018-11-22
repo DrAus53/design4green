@@ -24,13 +24,13 @@
 <p onclick="myFunction()"></p>
 
 <form>
- <div id="questionmultiple">
+ <div id="questionultiple">
  	 <fieldset>
  		 <div id="question">sucess</div>
     		  <p class="flip" onclick="myFunction(1)">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
    			    <label for='o'> <?php 
-					 $q = $questions[1]; ?></label>
+					 $q = $questions[1]; echo $q[1];h?></label>
    			  
    			    
     </fieldset>
@@ -72,12 +72,22 @@
 </form>
 <script>
 function myFunction(id) {
+	alert(id);
 	
-	alert("in");
- 	
- 	{
+ 	/* var response = document.getElementById("interest");	 */
+	
+	/* 
+ 	questions[nextQuestion][0]=="single_choice"){
 		
-	 	
+	 		var node = document.getElementById("questionmultiple");
+ 		for(int i=0;i<questions[nextQuestion][2].length;i++){		
+			
+ 			var newlabel = document.createElement("Label");
+ 			newlabel.innerHTML = (questions[nextQuestion][2])[2];	
+ 			node.innerHTML=newlabel.innerHTML;		
+ 		}	
+	}  */
+	
 // 	if(nextReponse[1]=="value"){
 		
 // 		var node = document.getElementById("questionmultiple");
