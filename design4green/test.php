@@ -63,23 +63,14 @@ $nbReponseQuestion = count($reponseQuestion);
 
 function changeQuestion() {
 	if(document.getElementById('description') != null){
-		console.log(document.getElementById('buttonNextDescription'));
 		document.getElementById('buttonNextDescription').innerHTML = "Next !";
 		document.getElementById('questionContainer').removeChild(document.getElementById('description'));
+		createQuestion(id);
 	}
-	if(document.getElementById('question') != null){
+	else if(document.getElementById('question') != null){
 		document.getElementById('questionContainer').removeChild(document.getElementById('question'));
-	}
-	createQuestion(type);
-// 	if(document.getElementById('description') != null){
-// 		document.getElementById('buttonNextDescription').innerHTML = "Next !";
-// 		document.getElementById('questionContainer').removeChild(document.getElementById('description'));
-// 		createQuestion(id);
-// 	}
-// 	else if(document.getElementById('question') != null){
-// 		document.getElementById('questionContainer').removeChild(document.getElementById('question'));
-// 		createQuestion(id);
-// 	}	
+		createQuestion(id);
+	}	
 }
 
 function createQuestion(id){
@@ -110,7 +101,7 @@ function createMultipleQuestion(){
 	divQuestion.appendChild(labelQuestion);
 	divQuestion.appendChild(sautLigne);
 	questionContainer.appendChild(divQuestion);
-	while (<?php $nbReponseQuestion?> !=0){
+	while (<?php echo $nbReponseQuestion?> !=0){
 		  createMultipleChoiceRep(<?php $nbReponseQuestion?>);
 		  <?php $nbReponseQuestion--?>;
 	}
