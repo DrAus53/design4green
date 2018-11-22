@@ -25,8 +25,6 @@ include ('dbread.php');
 </head>
 
 <body>
-
-	<?php $compteurQuestion = 1 ?>
 	
 	<form>
 		<br>
@@ -43,16 +41,18 @@ include ('dbread.php');
 	</form>
 
 	<script>
+
+	var compteur = 1;
 	
     function displayQuestion() {
+        
     	var question = document.getElementById("surveyQuestion");
     	var answer = document.getElementById("surveyAnswer");
-    	<?php $q=$questions[$compteurQuestion];?>
+    	
+    	<?php $q=$questions[7];?>
     	question.innerHTML="<?php echo $q[1];?>";
-    	<?php $compteurQuestion++; ?>;
-    	answer.innerHTML="<?php echo $compteurQuestion;?>";
-    	var test =  "<?php echo $questions[$compteurQuestion][1] ;?>"
-    	alert(test);
+
+    	compteur++;
     }
 
     </script>
