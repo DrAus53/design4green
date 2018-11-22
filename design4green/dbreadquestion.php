@@ -42,14 +42,9 @@ try {
     $result = $stmtQuestion->setFetchMode(PDO::FETCH_ASSOC);
     $state = "init";
     while ($donnesQuestion = $stmtQuestion->fetch()) {
-        echo "while 1 \n";
-        $state = "while1";
         $idQ = $donnesQuestion['id'];
-        echo "id Question =" + $idQ + "\n";
-        $state = "question n° " + $idQ ;
-        $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=" + intval($idQ);
-        echo $requete + "\n";
-        $state = "question n° " + $idQ + "\n requete \n" + $requete;
+        $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=" + str_replace("`", "", $idQ);
+        echo $requete;
         $stmtReponse = $conn->prepare($requete);
         $stmtReponse->execute();
         $reponses = [];
