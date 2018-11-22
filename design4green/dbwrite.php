@@ -91,11 +91,12 @@ function registerSurveyResult() {
     $password = "brocos";
     $dbname = "brocosurvey";
     $msgFunc = "fail";
+    $randomTitle = "saved"+rand(1000,9999);
     
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $stmtInsert = $conn->prepare("INSERT INTO Questionnaire(titre) VALUES ('".rand()."')");
+        $stmtInsert = $conn->prepare("INSERT INTO Questionnaire(titre) VALUES ('".$randomTitle."')");
         $stmtInsert->execute();
         $msgFunc = "success";
     }
