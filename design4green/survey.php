@@ -53,6 +53,7 @@ include ('dbread.php');
 		if (compteur==1) {
 			<?php $q=$questions[1];?>
 	    	question.innerHTML="<?php echo $q[1];?>";
+	    	answer.innerHTML="<?php echo $donnesReponse['valeur'];?>";
 		} else if (compteur==2) {
 			<?php $q=$questions[2];?>
 			question.innerHTML="<?php echo $q[1];?>";
