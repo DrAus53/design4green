@@ -102,7 +102,7 @@ function createMultipleQuestion(){
 	divQuestion.appendChild(sautLigne);
 	questionContainer.appendChild(divQuestion);
 	for (var i= 1; i <= <?php echo $nbReponseQuestion?> ; i++){
-        <?php echo "console.log('" , $question[2][2][2] , "');" ?>
+        <?php echo "console.log('" , $question[i][2][2] , "');" ?>
 		  createMultipleChoiceRep(i);
 	}
 }
@@ -118,7 +118,7 @@ function createMultipleChoiceRep(compteur){
 	inputRep.id = ("checkbox"+compteur);
 	var labelRep = document.createElement('label');
 	labelRep.htmlFor = "reponse"+compteur-1;
-	labelRep.appendChild(document.createTextNode(<?php echo "'", $question[compteur][2][2],"'" ?> );
+	labelRep.appendChild(document.createTextNode(<?php echo "'", $question[2][2][2],"'" ?> ));
 	divRep.appendChild(inputRep);
 	divRep.appendChild(labelRep);
 	question.appendChild(divRep);
