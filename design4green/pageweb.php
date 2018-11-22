@@ -52,12 +52,15 @@ function createSingleChoice(){
 	var div = question.appendChild(document.createElement("div"));
 	div.innerHTML="<?php echo $q[1];?>"	
 	 	var divRep = question.appendChild(document.createElement("div"));		
-		"<?php $f = $q[2];   
+		"<?php $f = $q[2];
+		      echo (count($q[2]));
 	 	   $tailleRep=count($f);
 		?>";
-		for (i=1; i<<?php echo $tailleRep; ?>; i++) { 
+		for (var i=0; i<=<?php echo $tailleRep-1; ?>; i++) { 
 	 		var input = divRep.appendChild(document.createElement("input"));
 	 		input.type="radio";	
+			input
+		 		
 	 		var label=input.appendChild(document.createElement("label"));
 	 		label.innerHTML="yes"
 	 		var label=input.appendChild(document.createElement("label"));
