@@ -75,7 +75,7 @@ function myFunction(id) {
 	
 	
  	
- 	<?php echo $q[id]=="single_choice" ;?>{
+ 	<?php echo $q[id] ;?>{
 		
 	 	
 // 	if(nextReponse[1]=="value"){
