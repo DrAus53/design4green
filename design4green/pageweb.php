@@ -41,6 +41,7 @@
 function myFunction(id) {
 	alert(id);
 	var test = "<?php echo $q[0] ;?>"
+	alert(test);
 	if(test=="single_choice"){
 		alert(test);
 		createSingleChoice();
