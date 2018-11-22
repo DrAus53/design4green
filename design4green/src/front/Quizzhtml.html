@@ -16,26 +16,27 @@
 	</div>
 	<div id="contain" class="row">
 		<form class="quizz">
-	<div id="questionContainer">
-	    <div id="description">
-	      <h4>Description :</h4>
-	      	<p>
-	      	L’alliance Green IT diffuse tous les deux ans un questionnaire afin d’évaluer la maturité des
-	entreprises françaises en matière de mise en place de services numériques écoresponsables. Ce
-	questionnaire est diffusé par l’AGIT et l’ensemble de ses partenaires durant 3 mois, du 1er janvier au
-	31 mars.
-	Il se compose de différentes questions qui reprennent les 8 grandes thématiques du Green IT – Les
-	infrastructures informatiques, le datacenter, les achats, les postes de travail, la fin de vie des
-	équipements, la gouvernance, l’impression et les applications.
-	Les réponses du questionnaire sont ensuite collectées, pondérées, compilées et analysées, donnant lieu à la création d’un Rapport détaillé.
-	      	</p>
-	   	</div>
-	</div>
-	<div id="buttonNext" class="flip">
-      		<p class="flip" onclick="changeQuestion('multipleChoice')">Let's do this ! :)</p>
-    </div>
-
-</form>
+			<div id="questionContainer">
+			    <div id="description">
+			      <h4>Description :</h4>
+			      </br>
+			      	<p>
+			      	L’alliance Green IT diffuse tous les deux ans un questionnaire afin d’évaluer la maturité des
+			entreprises françaises en matière de mise en place de services numériques écoresponsables. Ce
+			questionnaire est diffusé par l’AGIT et l’ensemble de ses partenaires durant 3 mois, du 1er janvier au
+			31 mars.
+			Il se compose de différentes questions qui reprennent les 8 grandes thématiques du Green IT – Les
+			infrastructures informatiques, le datacenter, les achats, les postes de travail, la fin de vie des
+			équipements, la gouvernance, l’impression et les applications.
+			Les réponses du questionnaire sont ensuite collectées, pondérées, compilées et analysées, donnant lieu à la création d’un Rapport détaillé.
+			      	</p>
+			   	</div>
+			</div>
+			</br>
+			<div class="flip">
+		      		<span id="buttonNextDescription" onclick="changeQuestion('multipleChoice')">"Let's do this ! :)"</span>
+		    </div>
+	</form>
 	</div>
 	<div id="footer">
 		<div id="pied" class="footer" style="border-style:solid">
@@ -47,8 +48,16 @@
 <script>
 
 function changeQuestion(type) {
+	if(document.getElementById('description') != null){
+		console.log(document.getElementById('buttonNextDescription'));
+		document.getElementById('buttonNextDescription').innerHTML = "Next !";
+		document.getElementById('questionContainer').removeChild(document.getElementById('description'));
+	}
+	if(document.getElementById('question') != null){
+		document.getElementById('questionContainer').removeChild(document.getElementById('question'));
+	}
 	createQuestion(type);
-	document.getElementById('questionContainer').removeChild(document.getElementById('description'));
+	
 }
 
 function createQuestion(type){
@@ -63,11 +72,13 @@ function createMultipleQuestion(){
 	var divQuestion = document.createElement("div");
 	divQuestion.id = "question";
 	divQuestion.style = "hidden";
-	var labelQuestion = document.createElement("label");
+	var labelQuestion = document.createElement("h4");
 	var textLabel = document.createTextNode("Question 1");
 	labelQuestion.appendChild(textLabel);
 	labelQuestion.setAttribute("id", "labelQuestion");
+	var sautLigne = document.createElement("br");
 	divQuestion.appendChild(labelQuestion);
+	divQuestion.appendChild(sautLigne);
 	questionContainer.appendChild(divQuestion);
 	while (compteur !=0){
 		console.log(compteur);
