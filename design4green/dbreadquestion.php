@@ -45,6 +45,8 @@ try {
         $stmtReponse = $conn->prepare("SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Response WHERE id_question=" + $idQ);
         $stmtReponse->execute();
         $reponses = [];
+        
+        $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
             $reponses[] = array($donnesReponse['id'], $donnesReponse['id_quest_suiv'], $donnesReponse['valeur'], $donnesReponse['champ_select'], $donnesReponse['champ_texte']);
         }
