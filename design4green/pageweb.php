@@ -3,7 +3,6 @@
 <html>
 <head>
 <?php include ('dbreadquestion.php') ;
- echo $questions ;
  ?>
 <style>
 #panel, .flip {
@@ -30,7 +29,7 @@
  		 <div id="question">success</div>
     		  <p class="flip" onclick="myFunction()">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
-   			    <label for='o'> Oui </label>
+   			    <label for='o'> <?php echo "bonjour"; ?> </label>
     </fieldset>
   </div>
   	   
