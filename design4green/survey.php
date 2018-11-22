@@ -46,7 +46,7 @@ include ('dbread.php');
 	
     function myFunction(id) {
     	var question = document.getElementById("surveyQuestion");
-    	<?php $q=$questions[1];?>
+    	<?php $q=$questions[$compteurQuestion];?>
     	question.innerHTML="<?php echo $q[1];?>";
     	<?php $compteurQuestion += 1 ?>;	
     }
