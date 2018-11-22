@@ -117,7 +117,7 @@ function createMultipleChoiceRep(compteur){
 	inputRep.id = ("checkbox"+compteur);
 	var labelRep = document.createElement('label');
 	labelRep.htmlFor = "reponse"+compteur-1;
-	labelRep.appendChild(document.createTextNode("<?php echo $$question[compteur][2][2]?>"));
+	labelRep.appendChild(document.createTextNode("<?php echo $question[compteur][2][2]?>"));
 	divRep.appendChild(inputRep);
 	divRep.appendChild(labelRep);
 	question.appendChild(divRep);
