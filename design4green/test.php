@@ -65,25 +65,25 @@ function changeQuestion() {
 	if(document.getElementById('description') != null){
 		document.getElementById('buttonNextDescription').innerHTML = "Next !";
 		document.getElementById('questionContainer').removeChild(document.getElementById('description'));
-		createQuestion(id);
+		createQuestion(<?php $idQuestion?>);
 	}
 	else if(document.getElementById('question') != null){
 		document.getElementById('questionContainer').removeChild(document.getElementById('question'));
-		createQuestion(id);
+		createQuestion(<?php $idQuestion?>);
 	}	
 }
 
 function createQuestion(id){
-	if(<?php echo $typeQuestion?> == "multiple_choice"){
+	if("<?php echo $typeQuestion?>" == 'multiple_choice'){
 		createMultipleQuestion();
 	}
-	if(<?php echo $typeQuestion?> == "single_choice"){
+	if("<?php echo $typeQuestion?>" == 'single_choice'){
 		createMultipleQuestion();
 	}
-	if(<?php echo $typeQuestion?> == "multiple_response"){
+	if("<?php echo $typeQuestion?>" == 'multiple_response'){
 		createMultipleQuestion();
 	}
-	if(<?php echo $typeQuestion?> == "value"){
+	if("<?php echo $typeQuestion?>" == 'value'){
 		createMultipleQuestion();
 	}
 }
