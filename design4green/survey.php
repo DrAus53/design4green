@@ -42,7 +42,7 @@ include ('dbread.php');
 
 	<script>
 
-	var compteur = 1;
+	//var compteur = 1;
 	
     function displayQuestion() {
         
@@ -52,7 +52,7 @@ include ('dbread.php');
     	<?php $q=$questions[7];?>
     	question.innerHTML="<?php echo $q[1];?>";
 
-    	compteur++;
+    	//compteur++;
     }
 
     </script>
