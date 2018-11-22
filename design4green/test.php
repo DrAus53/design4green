@@ -103,11 +103,12 @@ function createMultipleQuestion(){
 	questionContainer.appendChild(divQuestion);
 	for (var i= 1; i <= <?php echo $nbReponseQuestion?> ; i++){
 		console.log("<?php $val=$reponseQuestion[i]; echo $val[2]?>");
-		  createMultipleChoiceRep("<?php $val=$reponseQuestion[i]; echo $val[2]?>");
+		  createMultipleChoiceRep();
 	}
 }
 
 function createMultipleChoiceRep(){
+	var compteur = 1;
 	var question = document.getElementById('question');
 	var divRep = document.createElement("div");
 	divRep.id = "reponse"+compteur-1;
