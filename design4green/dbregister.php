@@ -1,9 +1,5 @@
-<?php
-$servername = "localhost";
-$username = "damien";
-$password = "brocos";
-$dbname = "brocosurvey";
-$msgFunc = "fail"
+
+$msgFunc = "fail";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -14,4 +10,3 @@ catch(PDOException $e)
 {
     echo "Connection failed: " . $e->getMessage();
 }
-?>
