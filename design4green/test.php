@@ -101,24 +101,22 @@ function createMultipleQuestion(){
 	divQuestion.appendChild(labelQuestion);
 	divQuestion.appendChild(sautLigne);
 	questionContainer.appendChild(divQuestion);
-	for (var i= 0; i < <?php echo $nbReponseQuestion?> ; i++){
+	for (var i= 1; i <= <?php echo $nbReponseQuestion?> ; i++){
 		console.log(<?php $val=$reponseQuestion[i]; echo $val?>);
 		  createMultipleChoiceRep();
 	}
 }
 
-function createMultipleChoiceRep(){
-	var compteur = 1;
+function createMultipleChoiceRep(compteur){
 	var question = document.getElementById('question');
-	
 	var divRep = document.createElement("div");
-	divRep.id = "reponse"+compteur;
+	divRep.id = "reponse"+compteur-1;
 	var inputRep = document.createElement("input");
 	inputRep.type = "checkbox";
-	inputRep.name = ("checkbox"+compteur);
+	inputRep.name = ("checkbox"+compteur-1);
 	inputRep.id = ("checkbox"+compteur);
 	var labelRep = document.createElement('label');
-	labelRep.htmlFor = "reponse"+compteur;
+	labelRep.htmlFor = "reponse"+compteur-1;
 	labelRep.appendChild(document.createTextNode(<?php $val = $reponseQuestion[compteur]; echo $val[2]?>));
 	divRep.appendChild(inputRep);
 	divRep.appendChild(labelRep);
