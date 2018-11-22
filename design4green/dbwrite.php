@@ -91,7 +91,7 @@ function registerSurveyResult() {
     $password = "brocos";
     $dbname = "brocosurvey";
     $msgFunc = "fail";
-    $randomTitle = "saved"+rand(1000,9999);
+    $randomTitle = "save".rand(1000,9999);
     
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
