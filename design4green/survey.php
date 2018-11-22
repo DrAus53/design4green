@@ -48,7 +48,7 @@ include ('dbread.php');
     	var question = document.getElementById("surveyQuestion");
     	<?php $q=$questions[$compteurQuestion];?>
     	question.innerHTML="<?php echo $q[1];?>";
-    	<?php $compteurQuestion += 1 ?>;	
+    	<?php $compteurQuestion++; ?>;
     }
 
     </script>
