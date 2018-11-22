@@ -44,7 +44,9 @@ try {
             else {
                 echo '&nbsp';
                 if ($reponsePreced!=$donnesReponse['valeur']) {
+                    echo '&nbsp';
                     echo $donnesReponse['valeur'];
+                    echo '<br/>'."\n";
                     echo '&nbsp';
                     $reponsePreced=$donnesReponse['valeur'];
                 }
