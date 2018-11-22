@@ -73,7 +73,6 @@ include ('dbread.php');
 		}
 
     	compteur++;
-
     }
 
     </script>
