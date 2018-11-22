@@ -21,10 +21,7 @@ try {
         $stmtReponse = $conn->prepare($requete);
         $stmtReponse->execute();
         $reponses = [];
-        echo '<br/>'."\n";
-        echo $donnesQuestion['valeur'];
-        echo '<br/>'."\n";
-        echo '<br/>'."\n";
+       
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
             $reponses[] = array(
@@ -33,8 +30,7 @@ try {
                 $donnesReponse['valeur'], 
                 $donnesReponse['champ_select'], 
                 $donnesReponse['champ_texte']);
-            echo  $donnesReponse['valeur'];
-            echo '<br/>'."\n";
+            
         }
         $questions[$idQ] = array(
             $donnesQuestion['type_reponse'],
@@ -42,7 +38,7 @@ try {
             $reponses
         );
     }
-    echo $questions;
+   
 } catch (PDOException $e) {
     echo $state + "\n";
     echo "Error: " . $e->getMessage();
