@@ -46,7 +46,7 @@ $nbReponseQuestion = count($reponseQuestion);
 			</div>
 			</br>
 			<div class="flip" id="buttonNext">
-		      		<p id="buttonNextDescription" onclick="changeQuestion();">
+		      		<p id="buttonNextDescription" onclick="changeQuestion()">
 		      		Let's do this !
 		      		</p>
 		    </div>
@@ -63,14 +63,23 @@ $nbReponseQuestion = count($reponseQuestion);
 
 function changeQuestion() {
 	if(document.getElementById('description') != null){
+		console.log(document.getElementById('buttonNextDescription'));
 		document.getElementById('buttonNextDescription').innerHTML = "Next !";
 		document.getElementById('questionContainer').removeChild(document.getElementById('description'));
-		createQuestion(id);
 	}
-	else if(document.getElementById('question') != null){
+	if(document.getElementById('question') != null){
 		document.getElementById('questionContainer').removeChild(document.getElementById('question'));
-		createQuestion(id);
-	}	
+	}
+	createQuestion(type);
+// 	if(document.getElementById('description') != null){
+// 		document.getElementById('buttonNextDescription').innerHTML = "Next !";
+// 		document.getElementById('questionContainer').removeChild(document.getElementById('description'));
+// 		createQuestion(id);
+// 	}
+// 	else if(document.getElementById('question') != null){
+// 		document.getElementById('questionContainer').removeChild(document.getElementById('question'));
+// 		createQuestion(id);
+// 	}	
 }
 
 function createQuestion(id){
