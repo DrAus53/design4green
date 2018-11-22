@@ -27,9 +27,6 @@ try {
     $stmtQuestion = $conn->prepare("SELECT id, type_reponse, valeur FROM Question");
     $stmtQuestion->execute();
 
-    $questions = array();
-    // set the resulting array to associative
-    $result = $stmtQuestion->setFetchMode(PDO::FETCH_ASSOC);
     $state = "init";
     $reponsePreced = "";
     while ($donnesQuestion = $stmtQuestion->fetch()) {
@@ -37,20 +34,11 @@ try {
         $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=" . $idQ;
         $stmtReponse = $conn->prepare($requete);
         $stmtReponse->execute();
-        $reponses = [];
         echo '<br/>' . "\n";
         echo '<strong>' . $donnesQuestion['valeur'] . '</strong>';
         echo '<br/>' . "\n";
         echo '<br/>' . "\n";
-        $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
-            $reponses[] = array(
-                $donnesReponse['id'],
-                $donnesReponse['id_quest_suiv'],
-                $donnesReponse['valeur'],
-                $donnesReponse['champ_select'],
-                $donnesReponse['champ_texte']
-            );
             if ($donnesReponse['champ_select'] == null) {
                 echo '&nbsp';
                 echo '<input type="checkbox" name="test" value="value">';
@@ -72,11 +60,7 @@ try {
             }
         }
         echo '<br/>' . "\n";
-        $questions[$idQ] = array(
-            $donnesQuestion['type_reponse'],
-            $donnesQuestion['valeur'],
-            $reponses
-        );
+
     }
 } catch (PDOException $e) {
     echo $state + "\n";
@@ -86,15 +70,10 @@ try {
 
 function registerSurveyResult($conn)
 {
-    $servername = "localhost";
-    $username = "damien";
-    $password = "brocos";
-    $dbname = "brocosurvey";
+
     $randomTitle = "save" . rand(1000, 9999);
 
     try {
-        //$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-        //$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $stmtInsert = $conn->prepare("INSERT INTO Questionnaire(titre) VALUES ('" . $randomTitle . "')");
         $stmtInsert->execute();
     } catch (PDOException $e) {
