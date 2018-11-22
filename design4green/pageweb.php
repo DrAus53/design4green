@@ -29,13 +29,13 @@
  		 <div id="question">sucess</div>
     		  <p class="flip" onclick="myFunction()">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
-   			    <label for='o'> <?php echo $($questions[1])[0]; ?> </label>
+   			    
    			  
    			    
     </fieldset>
   </div>
   	   
-<!-- <div id="value"> -->
+<!-- <div id="value<label for='o'> <php echo $($questions[1])[0]; ?> </label>"> -->
 <!--  	<fieldset> -->
 <!--   <legend> Question </legend>  -->
 <!--       <input type="text" id="coding" name="interest" value="idDeLaReponse"> -->
