@@ -52,7 +52,7 @@ function createSingleChoice(){
 	var div = question.appendChild(document.createElement("div"));
 	div.innerHTML="<?php echo $q[1];?>"	
 	 	var divRep = question.appendChild(document.createElement("div"));		
-		" <?php $f = $q[2];
+		"<?php $f = $q[2];
 		      echo (count($q[2]));
 	 	   $tailleRep=count($f);
 		?>" ;
