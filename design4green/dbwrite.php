@@ -5,7 +5,7 @@
 
 <?php
 echo '<br/>' . "\n";
-echo '<center><strong>Brocos Team Survey</strong>';
+echo '<center><strong>Brocos Team Survey</strong></center>';
 echo '<br/>' . "\n";
 echo '<br/>' . "\n";
 ?>
