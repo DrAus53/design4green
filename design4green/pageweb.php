@@ -28,17 +28,8 @@
 
  <div id="questionmultiple">
   <fieldset>
-  <div id="question">Question °1 : </div>
-   
-      <input type="radio" id="question" name="interest" value='$test'>
-      <label for="coding"><?php echo $questions ?></label>
-     
-    <div>
-      <input type="radio" id="question" name="interest" value="IdDeLaReponse">
-      <label for="music">Non</label>
-    </div>
-    <div>
-      <p class="flip" onclick='myFunction()'>Question suivante</p>
+  <div id="question">Bonjour</div>
+      <p class="flip" onclick='myFunction(1)'>Question suivante</p>
     </div>	
       </fieldset>
     </div>
@@ -77,22 +68,17 @@
     </div>	  
 </form>
 <script>
-function myFunction() {
+function myFunction(nextQuestion) {
 	var response = document.getElementById("interest");	
+	var questions = <?php $question ?>
 	
-	if(cliquer[i]){
-		
-		var nextReponse = cliquer.value;
-		
-	}
-	if(nextReponse[1]=="multiple-response"){
+	if(questions[nextQuestion][0]=="single_choice"){
 		
 		var node = document.getElementById("questionmultiple");
-		
-		for(int i=0;i<variableRecuperee[3].length;i++){		
+		for(int i=0;i<questions[nextQuestion][2].length;i++){		
 			
 			var newlabel = document.createElement("Label");
-			newlabel.innerHTML = (next[2])[2];	
+			newlabel.innerHTML = (questions[nextQuestion][2])[2];	
 			node.innerHTML=newlabel.innerHTML;		
 		}	
 	}
