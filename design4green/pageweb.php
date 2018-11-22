@@ -71,7 +71,7 @@
 <script>
 function myFunction(id) {
 	alert(id);
-	var test = <?php echo $q[1] ;?>
+	var test = "<?php echo $q[1] ;?>"
 	
 	
  	/* var response = document.getElementById("interest");	 */
