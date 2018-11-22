@@ -30,9 +30,7 @@
     		  <p class="flip" onclick="myFunction(1)">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
    			    <label for='o'> <?php 
-					 $q = $questions[1]; echo $q[1];h?></label>
-   			  
-   			    
+					 $q = $questions[1]; echo $q[1];?></label>		    
     </fieldset>
   </div>
   	   
@@ -73,6 +71,8 @@
 <script>
 function myFunction(id) {
 	alert(id);
+	var test = <?php $q ?>
+	alert(test)
 	
  	/* var response = document.getElementById("interest");	 */
 	
