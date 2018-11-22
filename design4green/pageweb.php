@@ -30,6 +30,8 @@
     		  <p class="flip" onclick="myFunction()">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
    			    <label for='o'> <?php echo count($questions); ?> </label>
+   			    <label for='o'> <?php echo $questions[0]; ?> </label>
+   			     <label for='o'> <?php echo $questions[0]=="single_choice"; ?> </label>
     </fieldset>
   </div>
   	   
@@ -71,7 +73,7 @@
 function myFunction() {
 	alert("tee");
  	var response = document.getElementById("interest");	
-	
+	var questions = <?php $questions ?>
 	
  /* 	if(questions[nextQuestion][0]=="single_choice"){
 		
