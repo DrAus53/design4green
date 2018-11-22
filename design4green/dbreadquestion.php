@@ -41,14 +41,17 @@ try {
     // set the resulting array to associative
     $result = $stmtQuestion->setFetchMode(PDO::FETCH_ASSOC);
     while ($donnesQuestion = $stmtQuestion->fetch()) {
+        echo "while 1";
         $idQ = $donnesQuestion['id'];
+        echo "id Question =" + $idQ;
         $stmtReponse = $conn->prepare("SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=" + $idQ);
         $stmtReponse->execute();
         $reponses = [];
 
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
-            // $reponses[] = array($donnesReponse['id'], $donnesReponse['id_quest_suiv'], $donnesReponse['valeur'], $donnesReponse['champ_select'], $donnesReponse['champ_texte']);
+            echo "while 2";
+            $reponses[] = array($donnesReponse['id'], $donnesReponse['id_quest_suiv'], $donnesReponse['valeur'], $donnesReponse['champ_select'], $donnesReponse['champ_texte']);
         }
         $questions[$idQ] = array(
             $donnesQuestion['type_reponse'],
