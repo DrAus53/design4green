@@ -4,7 +4,51 @@
 
 <!DOCTYPE html>
 <html>
+<style>
+@charset "utf-8";
+
+
+.title{
+	font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    margin-top:70px;
+    text-shadow: 2px 2px 4px #000000;
+    color:white;
+}
+
+.quizz{
+	margin-top:50px;
+	margin-left:10%;
+	width:80%;
+	height:400px;
+}
+
+.footer{
+	margin-top:50px;
+	height:100px;
+}
+
+.header{
+	width:100%;
+	height:200px;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), url("./../img/logo.png");
+	background-position: center;
+	text-align:center;
+}
+
+.flip {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    border: solid 1px #a6d8a8;
+    margin: auto;
+}
+</style>
 <head>
+
 <?php include ('dbreadquestion.php') ;
 $idQuestion = 1;
 $question = $questions[$idQuestion];
@@ -57,13 +101,13 @@ $nbReponseQuestion = count($reponseQuestion);
 	</div>
 	
 	<div class="flip" id="buttonNext">
-		      		<span id="buttonNextQuestion" onclick="changeQuestion(<?php echo $question?>)">"Let's do this ! :)"</span>
+		      		<span id="buttonNextQuestion" onclick="changeQuestion()">"Let's do this ! :)"</span>
 		    </div>
 </body>
 
 <script>
 
-function changeQuestion(type) {
+function changeQuestion() {
 	if(document.getElementById('description') != null){
 		console.log(document.getElementById('buttonNextDescription'));
 		document.getElementById('buttonNextDescription').innerHTML = "Next !";
