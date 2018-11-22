@@ -31,7 +31,7 @@
   <div id="question">Question °1 : </div>
    
       <input type="radio" id="question" name="interest" value='$test'>
-      <label for="coding">test</label>
+      <label for="coding">Ques</label>
      
     <div>
       <input type="radio" id="question" name="interest" value="IdDeLaReponse">
