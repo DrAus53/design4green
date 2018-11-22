@@ -27,6 +27,9 @@ try {
     $stmtQuestion = $conn->prepare("SELECT id, type_reponse, valeur FROM Question");
     $stmtQuestion->execute();
 
+    $questions = array();
+    // set the resulting array to associative
+    $result = $stmtQuestion->setFetchMode(PDO::FETCH_ASSOC);
     $state = "init";
     $reponsePreced = "";
     while ($donnesQuestion = $stmtQuestion->fetch()) {
@@ -69,17 +72,29 @@ try {
             }
         }
         echo '<br/>' . "\n";
+        $questions[$idQ] = array(
+            $donnesQuestion['type_reponse'],
+            $donnesQuestion['valeur'],
+            $reponses
+        );
     }
 } catch (PDOException $e) {
     echo $state + "\n";
     echo "Error: " . $e->getMessage();
 }
+//$conn = null;
 
-function registerSurveyResult($conn){
-
+function registerSurveyResult($conn)
+{
+    $servername = "localhost";
+    $username = "damien";
+    $password = "brocos";
+    $dbname = "brocosurvey";
     $randomTitle = "save" . rand(1000, 9999);
 
     try {
+        //$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        //$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $stmtInsert = $conn->prepare("INSERT INTO Questionnaire(titre) VALUES ('" . $randomTitle . "')");
         $stmtInsert->execute();
     } catch (PDOException $e) {
@@ -88,8 +103,6 @@ function registerSurveyResult($conn){
 
     return $randomTitle;
 }
-
-$conn = null;
 
 ?>
 
