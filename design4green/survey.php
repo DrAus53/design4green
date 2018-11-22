@@ -25,10 +25,9 @@ include ('dbread.php');
 </head>
 
 <body>
-
-	<?php $compteur = 1; ?>
 	
 	<form>
+	
 		<br>
 		<div id="surveyQuestion">
 		</div>
@@ -39,20 +38,25 @@ include ('dbread.php');
 		<div id="surveyNext">
 			<p class="flip" onclick="displayQuestion()">Next Question</p>
 		</div>
-		<div id="surveyIncrement">
-			<p class="flip" onclick="<?php $compteur++ ?>">Increment</p>
-		</div>
-		
+
 	</form>
 
 	<script>
+
+	var compteur = 1;
 	
     function displayQuestion() {
         
     	var question = document.getElementById("surveyQuestion");
     	var answer = document.getElementById("surveyAnswer");
-    	<?php $q=$questions[$compteur];?>
+    	<?php $q=$questions[1];?>
+		if (compteur==2) {
+			<?php $q=$questions[2];?>
+		} else if (compteur==3) {
+			<?php $q=$questions[3];?>
+		}
     	question.innerHTML="<?php echo $q[1];?>";
+    	compteur++;
 
     }
 
