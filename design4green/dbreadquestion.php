@@ -1,30 +1,4 @@
 <?php
-echo "<table style='border: solid 1px black;'>";
-echo "<tr><th>Id</th><th>Question</th><th>Reponse</th></tr>";
-
-class TableRows extends RecursiveIteratorIterator
-{
-
-    function __construct($it)
-    {
-        parent::__construct($it, self::LEAVES_ONLY);
-    }
-
-    function current()
-    {
-        return "<td style='width:150px;border:1px solid black;'>" . parent::current() . "</td>";
-    }
-
-    function beginChildren()
-    {
-        echo "<tr>";
-    }
-
-    function endChildren()
-    {
-        echo "</tr>" . "\n";
-    }
-}
 
 $servername = "localhost";
 $username = "damien";
@@ -47,7 +21,8 @@ try {
         $stmtReponse = $conn->prepare($requete);
         $stmtReponse->execute();
         $reponses = [];
-        echo $idQ;
+        echo $donnesQuestion['valeur'];
+        echo '<br/>'."\n";
         echo '<br/>'."\n";
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
@@ -58,6 +33,7 @@ try {
                 $donnesReponse['champ_select'], 
                 $donnesReponse['champ_texte']);
             echo  $donnesReponse['valeur'];
+            echo '<br/>'."\n";
             echo '<br/>'."\n";
         }
         $questions[$idQ] = array(
@@ -72,5 +48,4 @@ try {
     echo "Error: " . $e->getMessage();
 }
 $conn = null;
-echo "</table>";
 ?>
