@@ -29,46 +29,46 @@
  <div id="questionmultiple">
  	 <fieldset>
  		 <div id="question">success</div>
-    		  <p class="flip" onclick="myFunction(1)">Question suivante</p>
+    		  <p class="flip" onclick="myFunction()">Question suivante</p>
     </fieldset>
   </div>
   	   
-<div id="value">
- 	<fieldset>
-  <legend> Question </legend> 
-      <input type="text" id="coding" name="interest" value="idDeLaReponse">
-      </fieldset>
-    </div>	
+<!-- <div id="value"> -->
+<!--  	<fieldset> -->
+<!--   <legend> Question </legend>  -->
+<!--       <input type="text" id="coding" name="interest" value="idDeLaReponse"> -->
+<!--       </fieldset> -->
+<!--     </div>	 -->
     
-<div id="questionm">
- <fieldset>
-  <legend> Question °3 : </legend> 
-     <div id="sq">
-      <label> SQ </label>
-      <input type="radio" id="o" name="interest" value="idDeLaReponse"> 
-      <label for='o'> Oui </label>
-      <input type="radio" id="o" name="interest" value="idDeLaReponse">
-      <label for ='o'> No </label>
-      <input type="radio" id="o" name="interest" value="idDeLaReponse">
-      <label for='o'> NoIdea </label>
-      </div>
+<!-- <div id="questionm"> -->
+<!--  <fieldset> -->
+<!--   <legend> Question °3 : </legend>  -->
+<!--      <div id="sq"> -->
+<!--       <label> SQ </label> -->
+<!--       <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
+<!--       <label for='o'> Oui </label> -->
+<!--       <input type="radio" id="o" name="interest" value="idDeLaReponse"> -->
+<!--       <label for ='o'> No </label> -->
+<!--       <input type="radio" id="o" name="interest" value="idDeLaReponse"> -->
+<!--       <label for='o'> NoIdea </label> -->
+<!--       </div> -->
       
-      <div id="sq">
-      <label> SQs </label>
-      <input type="radio" id="o" name="interest" value="idDeLaReponse">
-      <input type="radio" id="o" name="interest" value="idDeLaReponse">
-      <input type="radio" id="o" name="interest" value="idDeLaReponse">
-      </div>
+<!--       <div id="sq"> -->
+<!--       <label> SQs </label> -->
+<!--       <input type="radio" id="o" name="interest" value="idDeLaReponse"> -->
+<!--       <input type="radio" id="o" name="interest" value="idDeLaReponse"> -->
+<!--       <input type="radio" id="o" name="interest" value="idDeLaReponse"> -->
+<!--       </div> -->
       
-     <div>
+<!--      <div> -->
       <p class="flip" onclick="myFunction()">Question suivante</p>
-      </div>
+<!--       </div> -->
     
-      </fieldset>
-    </div>	  
+<!--       </fieldset> -->
+<!--     </div>	  --> 
 </form>
 <script>
-function myFunction(nextQuestion) {
+function myFunction() {
 	alert("te");
 	var response = document.getElementById("interest");	
 	var questions = <?php $question ?>
@@ -87,7 +87,6 @@ function myFunction(nextQuestion) {
 	if(nextReponse[1]=="value"){
 		
 		var node = document.getElementById("questionmultiple");
-		
 		for(int i=0;i<variableRecuperee[3].length;i++){					
 			var newlabel = document.createElement("Input");
 			newlabel.innerHTML = '';	
