@@ -58,8 +58,6 @@ $reponseQuestion = $question[3];
 $nbReponseQuestion = count($reponseQuestion);
  ?>
 <meta charset="utf-8">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/test.css" rel="stylesheet">
 <title>Quizz</title>
 </head>
 <body>
