@@ -12,7 +12,7 @@ echo '<br/>' . "\n";
 echo '<br/>' . "\n";
 ?>
 <button onclick="sendSurveyResult()">Save it</button>
-<p id="surveySaveLink"></p>
+	<p id="surveySaveLink"></p>
 <?php
 echo '</center><br/>' . "\n";
 
@@ -20,7 +20,6 @@ $servername = "localhost";
 $username = "damien";
 $password = "brocos";
 $dbname = "brocosurvey";
-global $conn;
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -83,27 +82,25 @@ try {
     echo $state + "\n";
     echo "Error: " . $e->getMessage();
 }
-//$conn = null;
+$conn = null;
 
-function registerSurveyResult() {
-
+function registerSurveyResult()
+{
     $servername = "localhost";
     $username = "damien";
     $password = "brocos";
     $dbname = "brocosurvey";
-    $randomTitle = "save".rand(1000,9999);
-    
+    $randomTitle = "save" . rand(1000, 9999);
+
     try {
-        //$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-        //$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $stmtInsert = $conn->prepare("INSERT INTO Questionnaire(titre) VALUES ('".$randomTitle."')");
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $stmtInsert = $conn->prepare("INSERT INTO Questionnaire(titre) VALUES ('" . $randomTitle . "')");
         $stmtInsert->execute();
-    }
-    catch(PDOException $e)
-    {
+    } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     }
-    
+
     return $randomTitle;
 }
 
