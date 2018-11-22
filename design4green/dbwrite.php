@@ -85,7 +85,7 @@ try {
 $conn = null;
 
 function registerSurveyResult() {
-    return 666;
+    return 42;
 }
 
 ?>
