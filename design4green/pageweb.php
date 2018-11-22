@@ -72,7 +72,7 @@
 function myFunction(id) {
 	alert(id);
 	var test = <?php echo $q[1] ;?>
-	alert(test)
+	
 	
  	/* var response = document.getElementById("interest");	 */
 	
