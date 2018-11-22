@@ -31,7 +31,7 @@
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
    			    <label for='o'> <?php echo count($questions); ?> </label>
    			    <label for='o'> <?php echo $questions[0]; ?> </label>
-   			     <label for='o'> <?php echo $questions[0]=="single_choice"; ?> </label>
+   			    
     </fieldset>
   </div>
   	   
