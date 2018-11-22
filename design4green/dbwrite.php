@@ -85,7 +85,7 @@ try {
 $conn = null;
 
 function registerSurveyResult() {
-    return 42;
+    echo "lol";
 }
 
 ?>
@@ -93,8 +93,7 @@ function registerSurveyResult() {
 <script>
 function sendSurveyResult() {
     document.getElementById("surveySaveLink").innerHTML = "Use this link to fill the survey later : http://vps612249.ovh.net";
-    var phpadd = <?php echo registerSurveyResult();?>
-    alert(phpadd);
+    <?php registerSurveyResult();?>
 }
 </script>
 
