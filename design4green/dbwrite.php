@@ -86,6 +86,10 @@ $conn = null;
 
 function registerSurveyResult() {
 
+    $servername = "localhost";
+    $username = "damien";
+    $password = "brocos";
+    $dbname = "brocosurvey";
     $msgFunc = "fail";
     
     try {
