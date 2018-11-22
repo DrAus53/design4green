@@ -30,7 +30,7 @@
     		  <p class="flip" onclick="myFunction()">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
    			    <label for='o'> <?php 
-var q = $questions[1]; echo $q[1]; ?></label>
+var q = $questions[1]; echo $q[1]; echo "test"; ?></label>
    			  
    			    
     </fieldset>
