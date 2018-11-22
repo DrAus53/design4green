@@ -82,9 +82,9 @@ try {
     echo $state + "\n";
     echo "Error: " . $e->getMessage();
 }
-$conn = null;
+//$conn = null;
 
-function registerSurveyResult()
+function registerSurveyResult($conn)
 {
     $servername = "localhost";
     $username = "damien";
@@ -93,8 +93,8 @@ function registerSurveyResult()
     $randomTitle = "save" . rand(1000, 9999);
 
     try {
-        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        //$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        //$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $stmtInsert = $conn->prepare("INSERT INTO Questionnaire(titre) VALUES ('" . $randomTitle . "')");
         $stmtInsert->execute();
     } catch (PDOException $e) {
@@ -108,7 +108,7 @@ function registerSurveyResult()
 
 <script>
 function sendSurveyResult() {
-    var msgFunc = "<?php echo registerSurveyResult();?>"
+    var msgFunc = "<?php echo registerSurveyResult($conn);?>"
     document.getElementById("surveySaveLink").innerHTML = "Use this link to fill the survey later : http://vps612249.ovh.net/"+msgFunc+".php";
 }
 </script>
