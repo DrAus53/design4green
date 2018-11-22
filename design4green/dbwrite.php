@@ -23,7 +23,7 @@ try {
         $stmtReponse->execute();
         $reponses = [];
         echo '<br/>'."\n";
-        echo $donnesQuestion['valeur'];
+        echo '<strong>'.$donnesQuestion['valeur'].'</strong>';
         echo '<br/>'."\n";
         echo '<br/>'."\n";
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
@@ -56,6 +56,7 @@ try {
                 echo '<br/>'."\n";
             }
         }
+        echo '<br/>'."\n";
         $questions[$idQ] = array(
             $donnesQuestion['type_reponse'],
             $donnesQuestion['valeur'],
