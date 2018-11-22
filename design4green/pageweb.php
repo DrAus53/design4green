@@ -27,12 +27,12 @@
 
 
  <div id="questionmultiple">
-  <fieldset>
-  <div id="question">success</div>
-      <p class="flip" onclick='myFunction(1)'>Question suivante</p>
-    </div>	
-      </fieldset>
-    </div>
+ 	 <fieldset>
+ 		 <div id="question">success</div>
+    		  <p class="flip" onclick="myFunction(1)">Question suivante</p>
+    </fieldset>
+  </div>
+  	   
 <div id="value">
  	<fieldset>
   <legend> Question </legend> 
@@ -69,7 +69,7 @@
 </form>
 <script>
 function myFunction(nextQuestion) {
-	alert(nextQuestion);
+	alert("te");
 	var response = document.getElementById("interest");	
 	var questions = <?php $question ?>
 	
