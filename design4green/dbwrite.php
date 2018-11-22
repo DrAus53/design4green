@@ -1,5 +1,12 @@
 <?php
 
+echo '<br/>'."\n";
+echo '<center><strong>Questionnaire</strong>';
+echo '<br/>'."\n";
+echo '<br/>'."\n";
+echo '<button type="button">Save the survey</button></center>';
+echo '<br/>'."\n";
+
 $servername = "localhost";
 $username = "damien";
 $password = "brocos";
