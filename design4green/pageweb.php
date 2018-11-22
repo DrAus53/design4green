@@ -2,8 +2,7 @@
 
 <html>
 <head>
-<?php include 'dbreadquestion.php' ;
-php echo $questions;
+<?php include ('dbreadquestion.php') ;
  ?>
 <style>
 #panel, .flip {
@@ -32,7 +31,7 @@ php echo $questions;
   <div id="question">Question °1 : </div>
    
       <input type="radio" id="question" name="interest" value='$test'>
-      <label for="coding">tet</label>
+      <label for="coding">test</label>
      
     <div>
       <input type="radio" id="question" name="interest" value="IdDeLaReponse">
