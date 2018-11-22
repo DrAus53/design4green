@@ -26,7 +26,7 @@ try {
         while ($donnesReponse = $stmtReponse->fetch()) {
             $idR = $donnesReponse['id'];
             $reponses[idR] = array(
-                $donnesReponse['id'],
+//                 $donnesReponse['id'],
                 $donnesReponse['id_quest_suiv'],
                 $donnesReponse['valeur'],
                 $donnesReponse['champ_select'],
