@@ -101,9 +101,8 @@ function createMultipleQuestion(){
 	divQuestion.appendChild(labelQuestion);
 	divQuestion.appendChild(sautLigne);
 	questionContainer.appendChild(divQuestion);
-	while (<?php echo $nbReponseQuestion?> !=0){
+	for (var i= 0; i < <?php echo $nbReponseQuestion?> ; i++){
 		  createMultipleChoiceRep(<?php $nbReponseQuestion?>);
-		  <?php --$nbReponseQuestion?>;
 	}
 }
 
