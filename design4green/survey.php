@@ -29,13 +29,13 @@ include ('dbread.php');
 	<?php $compteurQuestion = 1 ?>
 	
 	<form>
-	
+		<br>
 		<div id="surveyQuestion">
 		</div>
-
+		<br>
 		<div id="surveyAnswer">
 		</div>
-		
+		<br>
 		<div id="surveyNext">
 			<p class="flip" onclick="myFunction(1)">Next Question</p>
 		</div>
@@ -47,7 +47,8 @@ include ('dbread.php');
     function myFunction(id) {
     	var question = document.getElementById("surveyQuestion");
     	<?php $q=$questions[1];?>
-    	question.innerHTML="<?php echo $q[1];?>"	
+    	question.innerHTML="<?php echo $q[1];?>";
+    	<?php $compteurQuestion += 1 ?>;	
     }
 
     </script>
