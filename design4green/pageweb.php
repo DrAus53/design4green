@@ -24,8 +24,9 @@
 <p onclick="myFunction()"></p>
 <form>
  <div id="questionultiple">
+ 
  	 <fieldset>
- 		 <div id="question">sucess</div>
+ 		 <div id="questionn">sucess</div>
     		  <p class="flip" onclick="myFunction(1)">Question suivante</p>
     		   <input type="radio" id="o" name="interest" value="idDeLaReponse">  -->
    			    <label for='o'> </label>		    
@@ -41,11 +42,13 @@ function myFunction(id) {
 	alert(id);
 	var test = "<?php echo $q[0] ;?>"
 	if(test=="single_choice"){
+		
 		createSingleChoice();
 	}
 }
 
 function createSingleChoice(){
+	document.getElementById('questionultiple').removeChild(document.getElementById('questionn'));
 	var question = document.getElementById("question");
 	var div = question.appendChild(document.createElement("div"));
 	div.innerHTML="<?php echo $q[1];?>"
