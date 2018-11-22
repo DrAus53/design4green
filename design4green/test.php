@@ -106,7 +106,7 @@ function createMultipleQuestion(){
 	}
 }
 
-function createMultipleChoiceRep(compteur){
+function createMultipleChoiceRep(var compteur){
 	var question = document.getElementById('question');
 	console.log(question);
 	var divRep = document.createElement("div");
