@@ -64,6 +64,7 @@ $nbReponseQuestion = count($reponseQuestion);
 			</div>
 
 			<div id="question">
+			</div>
 		
 		</form>
 		<footer>
