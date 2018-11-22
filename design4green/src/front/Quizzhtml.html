@@ -15,11 +15,32 @@
 		</div>
 	</div>
 	<div id="contain" class="row">
-		<div class="quizz" style="border-style:solid">
-			<div class="col-lg-8-col-offset-1">
-			<h1>ABC</h1>
+		<form id="quizz" class="form">
+			<div id="formContent" class="quizz" style="border-style:solid">
+				<div class="titleForm" id="titleForm">
+					<h1>Quizz :</h1>
+				</div>
+<!-- 				<div id="descriptif" class="descriptif"> -->
+<!-- 					<p>L’alliance Green IT diffuse tous les deux ans un questionnaire afin d’évaluer la maturité des -->
+<!-- entreprises françaises en matière de mise en place de services numériques écoresponsables. Ce -->
+<!-- questionnaire est diffusé par l’AGIT et l’ensemble de ses partenaires durant 3 mois, du 1er janvier au -->
+<!-- 31 mars. -->
+<!-- Il se compose de différentes questions qui reprennent les 8 grandes thématiques du Green IT – Les -->
+<!-- infrastructures informatiques, le datacenter, les achats, les postes de travail, la fin de vie des -->
+<!-- équipements, la gouvernance, l’impression et les applications. -->
+<!-- Les réponses du questionnaire sont ensuite collectées, pondérées, compilées et analysées, donnant -->
+<!-- lieu à la création d’un Rapport détaillé. </p> -->
+<!-- 				</div> -->
+				<div id="questionContainer" class="questionContainer">
+				</div>
+				
+				<button type="button" class="btn" onclick="quizz()">
+					Go !
+				</button>
+				<div class="reponse">
+				</div>
 			</div>
-		</div>
+		</form>	
 	</div>
 	<div id="footer">
 		<div id="pied" class="footer" style="border-style:solid">
@@ -27,5 +48,41 @@
 		</div>
 	</div>
 </body>
+
+<script>
+var index = 0;
+
+
+function quizz(){
+	afficher_question(index);
+	index++;
+}
+
+function afficher_question(i){
+	var questionContainer = document.getElementById("questionContainer");
+	var questionCree = document.getElementById("question");
+	
+	console.log(questionCree);
+	if(i == 0){
+		var question = document.createElement("div");
+		div.id="question";
+		var para = document.createTextNode("L alliance Green IT diffuse tous les deux ans un questionnaire afin d’évaluer la maturité des entreprises françaises en matière de mise en place de services numériques écoresponsables. Ce questionnaire est diffusé par l’AGIT et l’ensemble de ses partenaires durant 3 mois, du 1er janvier au 31 mars. Il se compose de différentes questions qui reprennent les 8 grandes thématiques du Green IT – Les infrastructures informatiques, le datacenter, les achats, les postes de travail, la fin de vie des équipements, la gouvernance, l’impression et les applications. Les réponses du questionnaire sont ensuite collectées, pondérées, compilées et analysées, donnant lieu à la création d’un Rapport détaillé. ");
+		question.id="test";
+		questionContainer.appendChild(div);
+		questionContainer.appendChild(question);
+	}
+	if(i == 1){
+		if(questionCree !=null){
+			questionCree.parentNode.removeChild(questionCree);
+		}
+		var question = document.createElement("div");
+		var intitule = document.createTextNode("question 1");
+		intitule.id="presentation";
+		question.appendChild(intitule);
+		questionContainer.appendChild(question);
+	}
+}
+
+</script>
 </html>
 
