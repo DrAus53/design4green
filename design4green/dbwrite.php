@@ -86,7 +86,7 @@ $conn = null;
 
 function registerSurveyResult() {
     $msgFunc = "atchoum";
-    return $msgFunc;
+    echo $msgFunc;
 }
 
 ?>
