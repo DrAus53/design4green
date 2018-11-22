@@ -1,19 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
 <?php
 
 echo '<br/>'."\n";
 echo '<center><strong>Brocos Team Survey</strong>';
 echo '<br/>'."\n";
 echo '<br/>'."\n";
-echo '<input type="button" name="testSaveSurvey" id="testSaveSurvey" value="Save it" /></center>';
+echo '<input type="button" onclick="sendSurveyResult()" value="Save it" /></center>';
 echo '<br/>'."\n";
-
-function testfun()
-{
-    echo "Your test function on button click is working";
-}
-if(array_key_exists('testSaveSurvey',$_POST)){
-    testfun();
-}
 
 $servername = "localhost";
 $username = "damien";
@@ -83,4 +80,16 @@ try {
     echo "Error: " . $e->getMessage();
 }
 $conn = null;
+
 ?>
+
+<script>
+
+function sendSurveyResult() {
+	alert("WALLAHHH");
+ 	var response = document.getElementById("interest");
+ 	
+</script>
+
+</body>
+</html>
