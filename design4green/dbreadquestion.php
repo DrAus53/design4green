@@ -1,6 +1,6 @@
 <?php
 echo "<table style='border: solid 1px black;'>";
-echo "<tr><th>Id</th><th>Firstname</th><th>Lastname</th></tr>";
+echo "<tr><th>Id</th><th>Question</th><th>Reponse</th></tr>";
 
 class TableRows extends RecursiveIteratorIterator
 {
@@ -43,19 +43,14 @@ try {
     $state = "init";
     while ($donnesQuestion = $stmtQuestion->fetch()) {
         $idQ = $donnesQuestion['id'];
-        //$requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=" + str_replace("`", "", $idQ);
         $requete = "SELECT id, id_quest_suiv, valeur, champ_select, champ_texte FROM Reponse WHERE id_question=".$idQ;
-        echo $requete;
-        echo '<br/>'."\n";
-        echo $idQ;
-        echo '<br/>'."\n";
         $stmtReponse = $conn->prepare($requete);
         $stmtReponse->execute();
         $reponses = [];
-
+        echo $idQ;
+        echo '<br/>'."\n";
         $result = $stmtReponse->setFetchMode(PDO::FETCH_ASSOC);
         while ($donnesReponse = $stmtReponse->fetch()) {
-            echo "while 2";
             $reponses[] = array(
                 $donnesReponse['id'],
                 $donnesReponse['id_quest_suiv'], 
@@ -63,6 +58,8 @@ try {
                 $donnesReponse['champ_select'], 
                 $donnesReponse['champ_texte']);
         }
+        echo  $donnesReponse['valeur'];
+        echo '<br/>'."\n";
         $questions[$idQ] = array(
             $donnesQuestion['type_reponse'],
             $donnesQuestion['valeur'],
