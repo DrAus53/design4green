@@ -21,7 +21,7 @@
 </style>
 </head>
 <body>
-<p onclick="myFunction()"><?php $questions ?></p>
+<p onclick="myFunction()"><?php echo $questions ?></p>
 
 <form>
 
