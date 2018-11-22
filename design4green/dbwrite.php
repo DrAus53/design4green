@@ -93,9 +93,6 @@ function registerSurveyResult() {
 <script>
 function sendSurveyResult() {
     document.getElementById("surveySaveLink").innerHTML = "Use this link to fill the survey later : http://vps612249.ovh.net";
-    <?php
-    registerSurveyResult();
-    ?>
 }
 </script>
 
