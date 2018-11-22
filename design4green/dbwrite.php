@@ -90,7 +90,6 @@ function registerSurveyResult() {
     $username = "damien";
     $password = "brocos";
     $dbname = "brocosurvey";
-    $msgFunc = "fail";
     $randomTitle = "save".rand(1000,9999);
     
     try {
@@ -98,14 +97,13 @@ function registerSurveyResult() {
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $stmtInsert = $conn->prepare("INSERT INTO Questionnaire(titre) VALUES ('".$randomTitle."')");
         $stmtInsert->execute();
-        $msgFunc = "success";
     }
     catch(PDOException $e)
     {
         echo "Connection failed: " . $e->getMessage();
     }
     
-    return $msgFunc;
+    return $randomTitle;
 }
 
 ?>
@@ -113,7 +111,7 @@ function registerSurveyResult() {
 <script>
 function sendSurveyResult() {
     var msgFunc = "<?php echo registerSurveyResult();?>"
-    document.getElementById("surveySaveLink").innerHTML = "Use this link to fill the survey later : http://vps612249.ovh.net "+msgFunc;
+    document.getElementById("surveySaveLink").innerHTML = "Use this link to fill the survey later : http://vps612249.ovh.net/"+msgFunc+".php";
 }
 </script>
 
