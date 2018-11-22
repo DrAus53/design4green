@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php include ('dbreadquestion.php') ;
+<?php include ('dbwrite.php') ;
 $idQuestion = 1;
 $question = $questions[$idQuestion];
 $typeQuestion = $question[1];
@@ -126,4 +126,3 @@ function createMultipleChoiceRep(compteur){
 
 </script>
 </html>
-
