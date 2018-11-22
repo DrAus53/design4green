@@ -157,7 +157,7 @@ function afficher_conclusion() {
 	}
 
 function myFunction(id) {
-	var typeQuestion =  "<?php echo $q[0] ;?>"
+	var typeQuestion =  "<?php echo $q[0];?>
 	if(typeQuestion=='single_choice'){
 		alert(typeQuestion);
 		createSingleChoice();
@@ -170,19 +170,22 @@ function myFunction(id) {
 function createQuestionValue(){
 		var question = document.getElementById("question");
 		var div = question.appendChild(document.createElement("div"));
+		alert("<?php echo $q[1];?>");
 		div.innerHTML="<?php echo $q[1];?>"	
 		 	var divRep = question.appendChild(document.createElement("div"));		
 			"<?php
-            $f = $q[2];
+			$reponses = $q[2];
             echo (count($q[2]));
-            $tailleRep = count($f);
+            $tailleRep = count($reponses);
             ?>" ;
 			for (var i=0; i<=<?php echo $tailleRep-1; ?>; i++) { 
+				<?php echo $reponse=$reponses[i];?>
+				alert("<?php echo $reponse[2];?>");
 		 		var input = divRep.appendChild(document.createElement("input"));
 		 		input.setAttribute("type", "text");
-		 		input.setAttribute("id", <?php $idRep = $f[i][0] + $f[i][1]; echo $idRep?>);
-		 		input.setAttribute("name", <?php echo $f[i][2]?>);
-		 		alert( <?php echo $f[i][2]?>);
+		 		input.setAttribute("id", <?php $idRep =  $reponse[0] + $reponse[1]; echo $idRep;?>);
+		 		input.setAttribute("name", <?php echo $reponse[2]?>);
+		 		alert( <?php echo $reponse[2]?>);
 			}
 
 }
