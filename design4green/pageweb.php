@@ -62,9 +62,7 @@ function createSingleChoice(){
 
 
 		for (i=1; i<<?php echo $tailleRep; ?>; i++) { 
-	 		var input = divRep.appendChild(document.createElement("input"));
-	 		input.type="radio";
-			input.innerHTML=<?php echo $f[i]; ?>
+	 		
 			
 		}
 
