@@ -71,7 +71,7 @@
         displayQuestion();
     }
 
-    var compteur = 1;
+    var compteur = 86;
 
     function displayQuestion() {
 
