@@ -90,7 +90,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -113,7 +113,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -136,7 +136,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -159,7 +159,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -204,7 +204,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -227,7 +227,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -250,7 +250,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -273,7 +273,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -296,7 +296,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -319,7 +319,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -342,7 +342,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -376,7 +376,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -421,7 +421,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -444,7 +444,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -467,7 +467,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -490,7 +490,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -513,7 +513,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -536,7 +536,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -559,7 +559,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -582,7 +582,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -616,7 +616,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -650,7 +650,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -673,7 +673,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -696,7 +696,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -719,7 +719,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -741,7 +741,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -764,7 +764,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -787,7 +787,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -810,7 +810,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -877,7 +877,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "checkbox";
             inputRep.name = ("checkbox" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -902,7 +902,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "checkbox";
             inputRep.name = ("checkbox" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
