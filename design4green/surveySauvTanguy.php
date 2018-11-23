@@ -110,6 +110,7 @@
             var answer = document.getElementById("surveyAnswer");
             answer.innerHTML= "";
             <?php foreach ($r as $reponse) { ?>
+            answer.appendChild(sautligne);
             var inputRep = document.createElement("input");
             inputRep.type = "radio";
             inputRep.name = ("radio" + compteur);
