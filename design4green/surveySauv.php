@@ -71,7 +71,7 @@ include ('dbread.php');
 
 	<footer>
 		<div id="footer" class="columns"
-			style="margin-top: 5%; margin-left: 10%; margin-right: 10%";>
+			style="margin-left: 10%; margin-right: 10%";>
 			<div class="text-center">
 				<p>
 					Realized by Emma MANSALIER, Damien MAYMARD, Gaëtan SCUILLER and
@@ -254,7 +254,7 @@ include ('dbread.php');
                     echo "<br>";
                 }
                 ?>";
-        } else if (compteur == 6) {
+        } else if (compteur == 31) {
             <?php $q = $questions[31];?>
             question.innerHTML = "<?php echo $q[31];?>";
             <?php $r = $q[2];?>
