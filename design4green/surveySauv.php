@@ -577,7 +577,8 @@ include ('dbread.php');
                 ?>";
 			
 		} else {
-	    	question.innerHTML="Press next button again.";
+	    	question.innerHTML="Press next button again :)";
+	    	answer.innerHTML="Maybe you have to press it 20 times before the next question display itself :(";
 		}
 
     	compteur++;
