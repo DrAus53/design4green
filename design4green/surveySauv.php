@@ -104,6 +104,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
