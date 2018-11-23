@@ -79,7 +79,7 @@ include('dbread.php');
         var answer = document.getElementById("surveyAnswer");
 
         if (compteur == 1) {
-            var typeQuestion = <?php echo $questions[0];?>;
+            var typeQuestion = <?php $val = $questions[compteur]; echo $val[0];?>;
             <?php $q = $questions[1];?>
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
