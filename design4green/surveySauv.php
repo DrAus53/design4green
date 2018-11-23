@@ -22,24 +22,45 @@ include ('dbread.php');
 }
 </style>
 
+<meta charset="utf-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/test.css" rel="stylesheet">
+<title>Brocos Team Survey</title>
+
 </head>
 
 <body>
-	
-	<form>
-	
-		<br>
-		<div id="surveyQuestion">
-		</div>
-		<br>
-		<div id="surveyAnswer">
-		</div>
-		<br>
-		<div id="surveyNext">
-			<p class="flip" onclick="displayQuestion()">Next Question</p>
-		</div>
 
-	</form>
+	<div id="header" class="row">
+		<div class="header">
+			<h2 class="title">
+				Baromètre des pratiques Green IT des entreprises en France 2018
+			</h2>
+		</div>
+	</div>
+	
+	<div id="contain" class="row">
+    	<form class="quizz">
+    	
+    		<br>
+    		<div id="surveyQuestion">
+    		</div>
+    		<br>
+    		<div id="surveyAnswer">
+    		</div>
+    		<br>
+    		<div id="surveyNext">
+    			<p class="flip" onclick="displayQuestion()">Next Question</p>
+    		</div>
+    
+    	</form>
+    </div>
+	
+	<div id="footer">
+		<div id="pied" class="footer" style="border-style:solid">
+			<h1>Footer</h1>
+		</div>
+	</div>
 
 	<script>
 
@@ -118,6 +139,7 @@ include ('dbread.php');
 			
 		} else {
 	    	question.innerHTML="No more questions.";
+	    	answer.innerHTML="Then no more answers too.";
 		}
 
     	compteur++;
