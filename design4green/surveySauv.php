@@ -64,8 +64,13 @@ include ('dbread.php');
 		} else if (compteur==2) {
 			<?php $q=$questions[2];?>
 			question.innerHTML="<?php echo $q[1];?>";
-            <?php $r=$q[2];?>
-	    	answer.innerHTML="<?php echo $r[3][2];?>";
+	    	<?php $r=$q[2];?>
+	    	answer.innerHTML="<?php
+	    	foreach ($r as $reponse) {
+	    	    echo $reponse[2];
+	    	    echo "<br>";
+	    	}
+	    	?>";
 	    	
 		} else if (compteur==3) {
 			<?php $q=$questions[3];?>
@@ -92,10 +97,24 @@ include ('dbread.php');
 		} else if (compteur==5) {
 			<?php $q=$questions[5];?>
 			question.innerHTML="<?php echo $q[1];?>";
+	    	<?php $r=$q[2];?>
+	    	answer.innerHTML="<?php
+	    	foreach ($r as $reponse) {
+	    	    echo $reponse[2];
+	    	    echo "<br>";
+	    	}
+	    	?>";
 			
 		} else if (compteur==6) {
 			<?php $q=$questions[6];?>
 			question.innerHTML="<?php echo $q[1];?>";
+	    	<?php $r=$q[2];?>
+	    	answer.innerHTML="<?php
+	    	foreach ($r as $reponse) {
+	    	    echo $reponse[2];
+	    	    echo "<br>";
+	    	}
+	    	?>";
 			
 		} else {
 	    	question.innerHTML="No more questions.";
