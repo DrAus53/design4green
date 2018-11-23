@@ -54,7 +54,12 @@ include ('dbread.php');
 			<?php $q=$questions[1];?>
 	    	question.innerHTML="<?php echo $q[1];?>";
 	    	<?php $r=$q[2];?>
-	    	answer.innerHTML="<?php echo $r[3][2];?>";
+	    	answer.innerHTML="<?php
+	    	echo $r[0][2];
+	    	echo $r[1][2];
+	    	echo $r[2][2];
+	    	echo $r[3][2];
+	    	?>";
 	    	
 		} else if (compteur==2) {
 			<?php $q=$questions[2];?>
