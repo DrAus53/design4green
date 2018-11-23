@@ -549,20 +549,6 @@
             <?php } ?>";
 
 
-            var answer = document.createElement("answer");
-            answer.id = "reponse" + compteur;
-            var inputRep = document.createElement("input");
-            inputRep.type = "checkbox";
-            inputRep.name = ("checkbox" + compteur);
-            inputRep.id = ("checkbox" + compteur);
-            var labelRep = document.createElement('label');
-            labelRep.htmlFor = "reponse" + compteur;
-            labelRep.appendChild(document.createTextNode(<?php echo "'", $question[2][2][2], "'" ?> ));
-            divRep.appendChild(inputRep);
-            divRep.appendChild(labelRep);
-            question.appendChild(answer);
-
-
         } else if (compteur == 87) {
             <?php $q = $questions[87];?>
             question.innerHTML = "<?php echo $q[1];?>";
