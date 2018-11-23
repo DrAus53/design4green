@@ -528,6 +528,7 @@
 
         } else if (compteur == 86) {
             <?php $q = $questions[86];?>
+            var sautligne = document.createElement("br");
             var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
@@ -541,7 +542,6 @@
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
-            var sautligne = document.createElement("br");
             answer.appendChild(inputRep);
             answer.appendChild(labelRep);
             answer.appendChild(sautligne);
