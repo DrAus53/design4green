@@ -17,6 +17,7 @@ include ('dbread.php');
 	border: solid 1px #a6d8a8;
 	margin: auto;
 }
+
 #panel, #question2, #question3 {
 	display: none;
 }
@@ -25,15 +26,13 @@ include ('dbread.php');
 </head>
 
 <body>
-	
+
 	<form>
-	
+
 		<br>
-		<div id="surveyQuestion">
-		</div>
+		<div id="surveyQuestion"></div>
 		<br>
-		<div id="surveyAnswer">
-		</div>
+		<div id="surveyAnswer"></div>
 		<br>
 		<div id="surveyNext">
 			<p class="flip" onclick="displayQuestion()">Next Question</p>
@@ -52,12 +51,10 @@ include ('dbread.php');
     	
 		<?php foreach ($questions as $q) {?>
 	    	question.innerHTML="<?php echo $q[1];?>";
-	    	<?php $r=$q[2];
-	    	foreach ($r as $reponse) {?>
+	    	<?php $r = $q[2];
+        foreach ($r as $reponse) {  ?>
 	    	    answer.innerHTML="<?php echo $reponse[2];?>";
-	    	    <?php echo "<br>";
-	    	}}
-	    	?>;
+	    	    <?php }}?>;
 	    	
 		if (compteur==2) {
 			<?php $q=$questions[2];?>
