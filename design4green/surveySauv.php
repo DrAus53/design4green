@@ -69,14 +69,17 @@ include ('dbread.php');
 		</form>
 	</div>
 
-	<div id="footer" class="footer">
-		<div class="text-center">
-			<p>
-				Realized by Emma MANSALIER, Damien MAYMARD, Gaëtan SCUILLER and
-				Tanguy SUARD <br> <a href="http://alliancegreenit.org/">alliancegreenit.org</a>
-			</p>
+	<footer>
+		<div id="footer" class="columns"
+			style="margin-top: 5%; margin-left: 10%; margin-right: 10%";>
+			<div class="text-center">
+				<p>
+					Realized by Emma MANSALIER, Damien MAYMARD, Gaëtan SCUILLER and
+					Tanguy SUARD <br> <a href="http://alliancegreenit.org/">alliancegreenit.org</a>
+				</p>
+			</div>
 		</div>
-	</div>
+	</footer>
 
 	<script>
 
@@ -163,6 +166,7 @@ include ('dbread.php');
                     }
                 }
                 ?>";
+			compteur += 4;
 
         } else if (compteur == 11) {
             <?php $q = $questions[11];?>
