@@ -545,9 +545,10 @@
             answer.appendChild(inputRep);
             answer.appendChild(labelRep);
             answer.appendChild(sautligne);
+            <?php } ?>
             question.appendChild(sautligne);
             question.appendChild(answer);
-            <?php } ?>
+
 
 
         } else if (compteur == 87) {
