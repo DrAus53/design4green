@@ -538,10 +538,10 @@
             inputRep.type = "checkbox";
             inputRep.name = ("checkbox" + compteur);
             inputRep.id = ("checkbox" + compteur);
-            var labelRep = document.createElement('label');
+            var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
-            var sautligne = document.createElement('br');
+            var sautligne = document.createElement("br");
             answer.appendChild(inputRep);
             answer.appendChild(labelRep);
             answer.appendChild(sautligne);
