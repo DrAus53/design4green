@@ -541,7 +541,7 @@
             inputRep.id = ("checkbox" + compteur);
             var labelRep = document.createElement('label');
             labelRep.htmlFor = "reponse" + compteur;
-            labelRep.appendChild(document.createTextNode(<?php echo "'", $reponse[2], "'" ?> ));
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
             answer.appendChild(inputRep);
             answer.appendChild(labelRep);
             question.appendChild(answer);
