@@ -163,10 +163,10 @@ include ('dbread.php');
                     if ($reponsePreced !=$reponse[2]) {
                         echo $reponse[2];
                         echo "<br>";
-                        echo "champ :".$reponse[3];
-                        echo "<br>";
                         $reponsePreced = $reponse[2];
                     }
+                    echo $reponse[3];
+                    echo "<br>";
                 }
                 ?>";
 			compteur += 4;
