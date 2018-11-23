@@ -528,12 +528,12 @@
 
         } else if (compteur == 86) {
             <?php $q = $questions[86];?>
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
-            var question = document.getElementById('question');
             <?php $r = $q[2];?>
             <?php foreach ($r as $reponse) { ?>
+            var answer = document.createElement("surveyAnswer");
             answer.innerHTML = "<?php echo $reponse[2];?>";
-            var answer = document.createElement("div");
             answer.id = "reponse" + compteur;
             var inputRep = document.createElement("input");
             inputRep.type = "checkbox";
