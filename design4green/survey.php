@@ -50,10 +50,10 @@ include ('dbread.php');
     	var answer = document.getElementById("surveyAnswer");
     	
 		var listQuestion = [<?php foreach ($questions as $q) {?>
-			<?php echo "[", $q[0], $q[1] ?>
+			<?php echo "'","[", $q[0], $q[1],"'" ?>
 	    	<?php $r = $q[2];
         foreach ($r as $reponse) {  ?>
-        <?php echo "[", $r[0], $r[1], $r[2], "]]"?>
+        <?php echo "'","[", $r[0], $r[1], $r[2], "]]","'"?>
 	    	    <?php }}?>;	  
 	    console.log(questionList);
     }
