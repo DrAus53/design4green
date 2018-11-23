@@ -67,7 +67,7 @@ include ('dbread.php');
         		<div id="surveyAnswer">
         		</div>
     
-        		<div id="surveyNext">
+        		<div id="surveyNext" style="visibility: hidden">
         			<p class="flip" onclick="displayQuestion()">Next Question</p>
         		</div>
         		
@@ -86,6 +86,7 @@ include ('dbread.php');
 	function beginSurvey() {
 		document.getElementById('questionContainer').removeChild(document.getElementById('description'));
 		document.getElementById('questionContainer').removeChild(document.getElementById('flipBeginSurvey'));
+		document.getElementById('surveyNext').style.visibility = "visible";
 		displayQuestion();
 	}
 
