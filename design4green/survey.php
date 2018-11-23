@@ -53,13 +53,13 @@ include ('dbread.php');
 			<?php foreach ($q as $quest){?>
 	    	question.innerHTML="<?php echo $quest[1];?>";
 	    	<?php $r=$quest[2];?>
-	    	answer.innerHTML="<?php
+	    	answer.innerHTML="'"<?php
 	    	foreach ($r as $reponse) {
 	    	    echo $reponse[2];
 	    	    echo "<br>";
 	    	}
 			}
-	    	?>";
+	    	?>"'";
 	    	
 
 
