@@ -531,6 +531,7 @@
             var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
+            alert($r.count());
             <?php foreach ($r as $reponse) { ?>
             var answer = document.createElement("surveyAnswer");
             answer.id = "reponse" + compteur;
