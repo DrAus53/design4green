@@ -69,8 +69,7 @@ include ('dbread.php');
 		</form>
 	</div>
 
-	<div id="footer" class="columns"
-		style="margin-top: 5%; margin-left: 10%; margin-right: 10%";>
+	<div id="footer" class="footer">
 		<div class="text-center">
 			<p>
 				Realized by Emma MANSALIER, Damien MAYMARD, Gaëtan SCUILLER and
@@ -155,10 +154,13 @@ include ('dbread.php');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
+                $reponsePreced = "";
                 foreach ($r as $reponse) {
-                    echo "<br>entrée ds le foreach avec r=".$r."<br>";
-                    echo $reponse[2];
-                    echo "<br>";
+                    if ($reponsePreced !=$reponse[2]) {
+                        echo $reponse[2];
+                        echo "<br>";
+                        $reponsePreced = $reponse[2];
+                    }
                 }
                 ?>";
 
