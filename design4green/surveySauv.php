@@ -117,6 +117,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -128,6 +130,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -139,6 +143,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -150,6 +156,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -181,6 +189,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -192,6 +202,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -203,6 +215,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -214,6 +228,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -225,6 +241,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -236,6 +254,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -247,6 +267,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -298,6 +320,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -309,6 +333,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -320,6 +346,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -331,6 +359,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -342,6 +372,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -353,6 +385,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -364,6 +398,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -375,6 +411,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -386,6 +424,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -397,6 +437,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -408,6 +450,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -439,6 +483,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -470,6 +516,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -481,6 +529,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -492,6 +542,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -503,6 +555,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -513,6 +567,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -524,6 +580,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -535,6 +593,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -546,6 +606,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -577,6 +639,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -588,6 +652,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -599,6 +665,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
@@ -616,7 +684,7 @@ include ('dbread.php');
             var inputRep = document.createElement("input");
             inputRep.type = "checkbox";
             inputRep.name = ("checkbox" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ;?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -641,7 +709,7 @@ include ('dbread.php');
             var inputRep = document.createElement("input");
             inputRep.type = "checkbox";
             inputRep.name = ("checkbox" + compteur);
-            inputRep.id = ($reponse[0]);
+            inputRep.id = (<?php echo $reponse[0] ;?>);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -658,6 +726,8 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
                     echo $reponse[2];
                     echo "<br>";
                 }
