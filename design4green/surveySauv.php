@@ -156,7 +156,7 @@ include ('dbread.php');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
                 foreach ($r as $reponse) {
-                    echo "<br>entrée ds le foreach<br>";
+                    echo "<br>entrée ds le foreach avec r=".$r."<br>";
                     echo $reponse[2];
                     echo "<br>";
                 }
