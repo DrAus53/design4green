@@ -70,14 +70,11 @@ include ('dbread.php');
 	</div>
 
 	<footer>
-		<div id="footer" class="columns"
-			style="margin-left: 10%; margin-right: 10%";>
-			<div class="text-center">
-				<p>
-					Realized by Emma MANSALIER, Damien MAYMARD, Gaëtan SCUILLER and
-					Tanguy SUARD <br> <a href="http://alliancegreenit.org/">alliancegreenit.org</a>
-				</p>
-			</div>
+		<div class="text-center">
+			<p>
+				Realized by Emma MANSALIER, Damien MAYMARD, Gaëtan SCUILLER and
+				Tanguy SUARD <br> <a href="http://alliancegreenit.org/">alliancegreenit.org</a>
+			</p>
 		</div>
 	</footer>
 
