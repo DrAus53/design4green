@@ -86,8 +86,8 @@ include ('dbread.php');
 	}
 
 	function endSurvey() {
-    	question.innerHTML="The survey as been submeted :)";
-    	answer.innerHTML="";
+		document.getElementById("surveyQuestion").innerHTML="The survey as been submeted :)";
+		document.getElementById("surveyAnswer").innerHTML="";
     	document.getElementById('questionContainer').removeChild(document.getElementById('flipEndSurvey'));
 	}
 
