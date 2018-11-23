@@ -43,20 +43,19 @@ include ('dbread.php');
 	<script>
 
 	var compteur = 1;
-	
+	var questionList;
     function displayQuestion() {
         
     	var question = document.getElementById("surveyQuestion");
     	var answer = document.getElementById("surveyAnswer");
     	
-		<?php foreach ($questions as $q) {?>
+		questionList = <?php foreach ($questions as $q) {?>
 	    	question.innerHTML="<?php echo $q[1];?>";
 	    	<?php $r = $q[2];
         foreach ($r as $reponse) {  ?>
 	    	    answer.innerHTML=<?php echo '"',$reponse[2],'"';?>;
-	    	    <?php }}?>;
-	    	    console.log(answer);
-	    	
+	    	    <?php }}?>;	  
+	    console.log(questionList);  	
     }
 
 
