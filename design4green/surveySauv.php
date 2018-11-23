@@ -57,10 +57,8 @@ include ('dbread.php');
         			</p>
 			   	</div>
 			   	
-				<div class="flip" id="flipBeginSurvey">
-		      		<p id="buttonBeginSurvey" onclick="beginSurvey()">
-		      			Let's do this !
-		      		</p>
+				<div id="flipBeginSurvey">
+					<p class="flip" onclick="beginSurvey()">Let's do this !</p>
 				</div>
     	
         		<div id="surveyQuestion">
@@ -88,6 +86,7 @@ include ('dbread.php');
 	function beginSurvey() {
 		document.getElementById('questionContainer').removeChild(document.getElementById('description'));
 		document.getElementById('questionContainer').removeChild(document.getElementById('flipBeginSurvey'));
+		displayQuestion();
 	}
 
 	var compteur = 1;
