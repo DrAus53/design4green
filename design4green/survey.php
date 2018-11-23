@@ -53,7 +53,7 @@ include ('dbread.php');
 	    	question.innerHTML="<?php echo $q[1];?>";
 	    	<?php $r = $q[2];
         foreach ($r as $reponse) {  ?>
-	    	    answer.innerHTML="'",<?php echo $reponse[2];?>,"'";
+	    	    answer.innerHTML=<?php echo "'",$reponse[2],"'";?>;
 	    	    <?php }}?>;
 	    	
 		if (compteur==2) {
