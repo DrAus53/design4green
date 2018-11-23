@@ -52,13 +52,12 @@ include ('dbread.php');
     	
 		<?php foreach ($questions as $q) {?>
 	    	question.innerHTML="<?php echo $q[1];?>";
-	    	<?php $r=$q[2];?>
-	    	answer.innerHTML="<?php
-	    	foreach ($r as $reponse) {
-	    	    echo $reponse[2];
-	    	    echo "<br>";
+	    	<?php $r=$q[2];
+	    	foreach ($r as $reponse) {?>
+	    	    answer.innerHTML="<?php echo $reponse[2];?>"
+	    	    <?php echo "<br>";
 	    	}}
-	    	?>";
+	    	?>;
 	    	
 		if (compteur==2) {
 			<?php $q=$questions[2];?>
