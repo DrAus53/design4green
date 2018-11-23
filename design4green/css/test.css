@@ -43,3 +43,14 @@
     border: solid 1px #a6d8a8;
     margin: auto;
 }
+
+#surveyQuestion {
+	font-size: 20px;
+	margin: auto;
+}
+
+#surveyAnswer {
+	font-size: 16px;
+	padding: 10px;
+	margin: auto;
+}
