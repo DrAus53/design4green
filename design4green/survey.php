@@ -50,16 +50,41 @@ include ('dbread.php');
     	var question = document.getElementById("surveyQuestion");
     	var answer = document.getElementById("surveyAnswer");
     	
-			
-	    	question.innerHTML="'"<?php foreach ($q as $quest){echo $quest[1];  $r=$quest[2];?>"'";
-	    	answer.innerHTML="'"<?php
+		<?php foreach ($questions as $q) {?>
+	    	question.innerHTML="<?php echo $q[1];?>";
+	    	<?php $r=$q[2];?>
+	    	answer.innerHTML="<?php
 	    	foreach ($r as $reponse) {
 	    	    echo $reponse[2];
 	    	    echo "<br>";
-	    	};
-			} 	?>"'";
+	    	}}
+	    	?>";
 	    	
-
+		if (compteur==2) {
+			<?php $q=$questions[2];?>
+			question.innerHTML="<?php echo $q[1];?>";
+            <?php $r=$q[2];?>
+	    	answer.innerHTML="<?php echo $r[3][2];?>";
+	    	
+		} else if (compteur==3) {
+			<?php $q=$questions[3];?>
+			question.innerHTML="<?php echo $q[1];?>";
+			
+		} else if (compteur==4) {
+			<?php $q=$questions[4];?>
+			question.innerHTML="<?php echo $q[1];?>";
+			
+		} else if (compteur==5) {
+			<?php $q=$questions[5];?>
+			question.innerHTML="<?php echo $q[1];?>";
+			
+		} else if (compteur==6) {
+			<?php $q=$questions[6];?>
+			question.innerHTML="<?php echo $q[1];?>";
+			
+		} else {
+	    	question.innerHTML="No more questions.";
+		}
 
     	compteur++;
     }
