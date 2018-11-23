@@ -529,13 +529,38 @@
         } else if (compteur == 86) {
             <?php $q = $questions[86];?>
             question.innerHTML = "<?php echo $q[1];?>";
+            var question = document.getElementById('question');
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            foreach ($r as $reponse) {?>
+            var answer = document.createElement("answer");
+            answer.id = "reponse" + compteur;
+            var inputRep = document.createElement("input");
+            inputRep.type = "checkbox";
+            inputRep.name = ("checkbox" + compteur);
+            inputRep.id = ("checkbox" + compteur);
+            var labelRep = document.createElement('label');
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo "'", $reponse[2], "'" ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            question.appendChild(answer);
+            <?php } ?>";
+
+
+            var answer = document.createElement("answer");
+            answer.id = "reponse" + compteur;
+            var inputRep = document.createElement("input");
+            inputRep.type = "checkbox";
+            inputRep.name = ("checkbox" + compteur);
+            inputRep.id = ("checkbox" + compteur);
+            var labelRep = document.createElement('label');
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo "'", $question[2][2][2], "'" ?> ));
+            divRep.appendChild(inputRep);
+            divRep.appendChild(labelRep);
+            question.appendChild(answer);
+
 
         } else if (compteur == 87) {
             <?php $q = $questions[87];?>
