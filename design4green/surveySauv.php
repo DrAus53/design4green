@@ -262,6 +262,10 @@ include ('dbread.php');
                         echo "<br>";
                         $reponsePreced = $reponse[2];
                     }
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
+                    echo $reponse[3];
+                    echo "<br>";
                 }
                 ?>";
 			compteur += 12;
@@ -278,6 +282,10 @@ include ('dbread.php');
                         echo "<br>";
                         $reponsePreced = $reponse[2];
                     }
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
+                    echo $reponse[3];
+                    echo "<br>";
                 }
                 ?>";
 			compteur += 7;
@@ -415,6 +423,10 @@ include ('dbread.php');
                         echo "<br>";
                         $reponsePreced = $reponse[2];
                     }
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
+                    echo $reponse[3];
+                    echo "<br>";
                 }
                 ?>";
 			compteur += 11;
@@ -442,6 +454,10 @@ include ('dbread.php');
                         echo "<br>";
                         $reponsePreced = $reponse[2];
                     }
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
+                    echo $reponse[3];
+                    echo "<br>";
                 }
                 ?>";
 			compteur += 6;
@@ -545,6 +561,10 @@ include ('dbread.php');
                         echo "<br>";
                         $reponsePreced = $reponse[2];
                     }
+                    echo "<input type='checkbox' name='testch' value='valuech'>";
+                    echo '&nbsp';
+                    echo $reponse[3];
+                    echo "<br>";
                 }
                 ?>";
 			compteur += 4;
