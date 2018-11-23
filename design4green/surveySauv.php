@@ -62,7 +62,7 @@ include ('dbread.php');
 				</div>
 				
 				<div id="flipEndSurvey" style="visibility: hidden">
-					<p class="flip" onclick="displayQuestion()">Send Survey</p>
+					<p class="flip" onclick="endSurvey()">Send Survey</p>
 				</div>
 
 			</div>
@@ -70,12 +70,10 @@ include ('dbread.php');
 	</div>
 
 	<footer class="footer">
-		<div class="text-center">
-			<p>
-				Realized by Emma MANSALIER, Damien MAYMARD, Gaëtan SCUILLER and
-				Tanguy SUARD <br> <a href="http://alliancegreenit.org/">alliancegreenit.org</a>
-			</p>
-		</div>
+		<p>
+			Realized by Emma MANSALIER, Damien MAYMARD, Gaëtan SCUILLER and
+			Tanguy SUARD <br> <a href="http://alliancegreenit.org/">alliancegreenit.org</a>
+		</p>
 	</footer>
 
 	<script>
@@ -85,6 +83,12 @@ include ('dbread.php');
 		document.getElementById('questionContainer').removeChild(document.getElementById('flipBeginSurvey'));
 		document.getElementById('surveyNext').style.visibility = "visible";
 		displayQuestion();
+	}
+
+	function endSurvey() {
+    	question.innerHTML="The survey as been submeted :)";
+    	answer.innerHTML="";
+    	document.getElementById('questionContainer').removeChild(document.getElementById('flipEndSurvey'));
 	}
 
 	var compteur = 1;
