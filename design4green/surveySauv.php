@@ -50,7 +50,7 @@ include ('dbread.php');
 				</div>
 
 				<div id="flipBeginSurvey">
-					<p class="flip" onclick="beginSurvey()">Let's do this !</p>
+					<p class="flip" onclick="beginSurvey()">Let's do This !</p>
 				</div>
 
 				<div id="surveyQuestion"></div>
@@ -60,12 +60,16 @@ include ('dbread.php');
 				<div id="surveyNext" style="visibility: hidden">
 					<p class="flip" onclick="displayQuestion()">Next Question</p>
 				</div>
+				
+				<div id="flipEndSurvey" style="visibility: hidden">
+					<p class="flip" onclick="displayQuestion()">Send Survey</p>
+				</div>
 
 			</div>
 		</form>
 	</div>
 
-	<footer>
+	<footer class="footer">
 		<div class="text-center">
 			<p>
 				Realized by Emma MANSALIER, Damien MAYMARD, Gaëtan SCUILLER and
@@ -606,6 +610,8 @@ include ('dbread.php');
 		} else {
 	    	question.innerHTML="We thank you for your participation in this study.";
 	    	answer.innerHTML="The survey is finished :)";
+	    	document.getElementById('questionContainer').removeChild(document.getElementById('surveyNext'));
+	    	document.getElementById('flipEndSurvey').style.visibility = "visible";
 		}
 
     	compteur++;
