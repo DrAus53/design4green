@@ -33,11 +33,20 @@ include ('dbread.php');
 						digital services. This survey is distributed by the AGIT and all
 						its partners for 3 months from 1 January to 31 March. It consists
 						of different questions that reflect the 8 major themes of Green
-						IT. The IT infrastructures, the data center, the purchases, the
-						workstations, the equipment end of life, governance, printing and
-						applications. The responses of the survey are then collected,
-						weighted, compiled and analyzed, leading to the creation of a
-						detailed report.</p>
+						IT.
+    					<ul>
+    						<li>I.T. Infrastructures</li>
+    						<li>Data Center</li>
+    						<li>Purchases</li>
+    						<li>Workstations</li>
+    						<li>Equipment End of Life</li>
+    						<li>Governance</li>
+    						<li>Printing</li>
+    						<li>Applications</li>
+    					</ul>
+					The responses of the survey are then collected, weighted, compiled
+					and analyzed, leading to the creation of a detailed report.
+					</p>
 				</div>
 
 				<div id="flipBeginSurvey">
