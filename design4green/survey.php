@@ -55,10 +55,10 @@ include ('dbread.php');
 	    	question.innerHTML="<?php echo $q[1];?>";
 	    	<?php $r=$q[2];?>
 	    	answer.innerHTML="<?php
-	    	echo $r[0][2];
-	    	echo $r[1][2];
-	    	echo $r[2][2];
-	    	echo $r[3][2];
+	    	foreach ($r as $reponse) {
+	    	    echo $reponse[2];
+	    	    echo "<br>";
+	    	}
 	    	?>";
 	    	
 		} else if (compteur==2) {
