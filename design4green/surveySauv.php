@@ -45,21 +45,20 @@ include ('dbread.php');
     		
     			<div id="description">
 					<h4>Introduction</h4>
-					</br>
-					<p>
-			      	L’alliance Green IT diffuse tous les deux ans un questionnaire afin d’évaluer la maturité des
-			entreprises françaises en matière de mise en place de services numériques écoresponsables. Ce
-			questionnaire est diffusé par l’AGIT et l’ensemble de ses partenaires durant 3 mois, du 1er janvier au
-			31 mars.
-			Il se compose de différentes questions qui reprennent les 8 grandes thématiques du Green IT – Les
-			infrastructures informatiques, le datacenter, les achats, les postes de travail, la fin de vie des
-			équipements, la gouvernance, l’impression et les applications.
-			Les réponses du questionnaire sont ensuite collectées, pondérées, compilées et analysées, donnant lieu à la création d’un Rapport détaillé.
-					</p>
+        			<p>
+        			      	L’alliance Green IT diffuse tous les deux ans un questionnaire afin d’évaluer la maturité des
+        			entreprises françaises en matière de mise en place de services numériques écoresponsables. Ce
+        			questionnaire est diffusé par l’AGIT et l’ensemble de ses partenaires durant 3 mois, du 1er janvier au
+        			31 mars.
+        			Il se compose de différentes questions qui reprennent les 8 grandes thématiques du Green IT – Les
+        			infrastructures informatiques, le datacenter, les achats, les postes de travail, la fin de vie des
+        			équipements, la gouvernance, l’impression et les applications.
+        			Les réponses du questionnaire sont ensuite collectées, pondérées, compilées et analysées, donnant lieu à la création d’un Rapport détaillé.
+        			</p>
 			   	</div>
 			   	
-				<div class="flip" id="buttonNext">
-		      		<p id="buttonNextDescription" onclick="changeQuestion()">
+				<div class="flip" id="flipBeginSurvey">
+		      		<p id="buttonBeginSurvey" onclick="beginSurvey()">
 		      			Let's do this !
 		      		</p>
 				</div>
@@ -85,6 +84,11 @@ include ('dbread.php');
 	</div>
 
 	<script>
+
+	function beginSurvey() {
+		document.getElementById('questionContainer').removeChild(document.getElementById('description'));
+		document.getElementById('questionContainer').removeChild(document.getElementById('flipBeginSurvey'));
+	}
 
 	var compteur = 1;
 	
