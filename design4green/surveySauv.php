@@ -165,6 +165,8 @@ include ('dbread.php');
                         echo "<br>";
                         $reponsePreced = $reponse[2];
                     }
+                    echo '<input type="checkbox" name="test" value="value">';
+                    echo '&nbsp';
                     echo $reponse[3];
                     echo "<br>";
                 }
