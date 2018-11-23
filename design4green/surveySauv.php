@@ -18,7 +18,7 @@ include ('dbread.php');
 
 	<div id="header" class="row">
 		<div class="header">
-			<h2 class="title">Green IT Alliance Survey by Brocos Team</h2>
+			<h2 class="title">Green IT Alliance Survey</h2>
 		</div>
 	</div>
 
@@ -162,6 +162,8 @@ include ('dbread.php');
                 foreach ($r as $reponse) {
                     if ($reponsePreced !=$reponse[2]) {
                         echo $reponse[2];
+                        echo "<br>";
+                        echo "champ :".$reponse[3];
                         echo "<br>";
                         $reponsePreced = $reponse[2];
                     }
