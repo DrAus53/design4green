@@ -533,7 +533,7 @@
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
             foreach ($r as $reponse) {
-                echo $reponse[2];?>;
+                echo $reponse[2];?>";
             var answer = document.createElement("answer");
             answer.id = "reponse" + compteur;
             var inputRep = document.createElement("input");
