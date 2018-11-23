@@ -34,25 +34,47 @@ include ('dbread.php');
 	<div id="header" class="row">
 		<div class="header">
 			<h2 class="title">
-				Baromètre des pratiques Green IT des entreprises en France 2018
+				Design4Green Survey by Brocos Team
 			</h2>
 		</div>
 	</div>
 	
 	<div id="contain" class="row">
     	<form class="quizz">
+    		<div id="questionContainer">
+    		
+    			<div id="description">
+					<h4>Introduction</h4>
+					</br>
+					<p>
+			      	L’alliance Green IT diffuse tous les deux ans un questionnaire afin d’évaluer la maturité des
+			entreprises françaises en matière de mise en place de services numériques écoresponsables. Ce
+			questionnaire est diffusé par l’AGIT et l’ensemble de ses partenaires durant 3 mois, du 1er janvier au
+			31 mars.
+			Il se compose de différentes questions qui reprennent les 8 grandes thématiques du Green IT – Les
+			infrastructures informatiques, le datacenter, les achats, les postes de travail, la fin de vie des
+			équipements, la gouvernance, l’impression et les applications.
+			Les réponses du questionnaire sont ensuite collectées, pondérées, compilées et analysées, donnant lieu à la création d’un Rapport détaillé.
+					</p>
+			   	</div>
+			   	
+				<div class="flip" id="buttonNext">
+		      		<p id="buttonNextDescription" onclick="changeQuestion()">
+		      			Let's do this !
+		      		</p>
+				</div>
     	
-    		<br>
-    		<div id="surveyQuestion">
-    		</div>
-    		<br>
-    		<div id="surveyAnswer">
-    		</div>
-    		<br>
-    		<div id="surveyNext">
-    			<p class="flip" onclick="displayQuestion()">Next Question</p>
-    		</div>
+        		<div id="surveyQuestion">
+        		</div>
     
+        		<div id="surveyAnswer">
+        		</div>
+    
+        		<div id="surveyNext">
+        			<p class="flip" onclick="displayQuestion()">Next Question</p>
+        		</div>
+        		
+    		</div>
     	</form>
     </div>
 	
