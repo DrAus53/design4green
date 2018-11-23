@@ -60,14 +60,22 @@ include ('dbread.php');
 				<div id="surveyNext" style="visibility: hidden">
 					<p class="flip" onclick="displayQuestion()">Next Question</p>
 				</div>
+				
+				<div id="conclusion" style="display: none">
+					<p>We thank you for your participation in this study.</p>
+				</div>
 
 			</div>
 		</form>
 	</div>
 
-	<div id="footer">
-		<div id="pied" class="footer" style="border-style: solid">
-			<h1>Footer</h1>
+	<div id="footer" class="columns"
+		style="margin-top: 5%; margin-left: 10%; margin-right: 10%";>
+		<div class="text-center">
+			<p>
+				Realized by Emma MANSALIER, Damien MAYMARD, Gaëtan SCUILLER and
+				Tanguy SUARD <br> <a href="http://alliancegreenit.org/">alliancegreenit.org</a>
+			</p>
 		</div>
 	</div>
 
