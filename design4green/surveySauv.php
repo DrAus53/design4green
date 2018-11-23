@@ -60,10 +60,6 @@ include ('dbread.php');
 				<div id="surveyNext" style="visibility: hidden">
 					<p class="flip" onclick="displayQuestion()">Next Question</p>
 				</div>
-				
-				<div id="conclusion" style="display: none">
-					<p>We thank you for your participation in this study.</p>
-				</div>
 
 			</div>
 		</form>
@@ -241,26 +237,38 @@ include ('dbread.php');
                     echo "<br>";
                 }
                 ?>";
+                
         } else if (compteur == 18) {
             <?php $q = $questions[18];?>
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
+                $reponsePreced = "";
                 foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
+                    if ($reponsePreced !=$reponse[2]) {
+                        echo $reponse[2];
+                        echo "<br>";
+                        $reponsePreced = $reponse[2];
+                    }
                 }
                 ?>";
+			compteur += 12;
+                
         } else if (compteur == 31) {
             <?php $q = $questions[31];?>
             question.innerHTML = "<?php echo $q[31];?>";
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
+                $reponsePreced = "";
                 foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
+                    if ($reponsePreced !=$reponse[2]) {
+                        echo $reponse[2];
+                        echo "<br>";
+                        $reponsePreced = $reponse[2];
+                    }
                 }
                 ?>";
+			compteur += 7;
 
         } else if (compteur == 39) {
             <?php $q = $questions[39];?>
@@ -388,11 +396,16 @@ include ('dbread.php');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
+                $reponsePreced = "";
                 foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
+                    if ($reponsePreced !=$reponse[2]) {
+                        echo $reponse[2];
+                        echo "<br>";
+                        $reponsePreced = $reponse[2];
+                    }
                 }
                 ?>";
+			compteur += 11;
 
         } else if (compteur == 62) {
             <?php $q = $questions[62];?>
@@ -410,11 +423,16 @@ include ('dbread.php');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
+                $reponsePreced = "";
                 foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
+                    if ($reponsePreced !=$reponse[2]) {
+                        echo $reponse[2];
+                        echo "<br>";
+                        $reponsePreced = $reponse[2];
+                    }
                 }
                 ?>";
+			compteur += 6;
 
         } else if (compteur == 70) {
             <?php $q = $questions[70];?>
@@ -508,11 +526,16 @@ include ('dbread.php');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
             answer.innerHTML = "<?php
+                $reponsePreced = "";
                 foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
+                    if ($reponsePreced !=$reponse[2]) {
+                        echo $reponse[2];
+                        echo "<br>";
+                        $reponsePreced = $reponse[2];
+                    }
                 }
                 ?>";
+			compteur += 4;
 
         } else if (compteur == 83) {
             <?php $q = $questions[83];?>
@@ -581,8 +604,8 @@ include ('dbread.php');
                 ?>";
 			
 		} else {
-	    	question.innerHTML="Press next button again :)";
-	    	answer.innerHTML="Maybe you have to press it 20 times before the next question display itself :(";
+	    	question.innerHTML="We thank you for your participation in this study.";
+	    	answer.innerHTML="The survey is finished :)";
 		}
 
     	compteur++;
