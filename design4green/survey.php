@@ -53,22 +53,31 @@ include ('dbread.php');
 		if (compteur==1) {
 			<?php $q=$questions[1];?>
 	    	question.innerHTML="<?php echo $q[1];?>";
-	    	answer.innerHTML="<?php echo $donnesReponse['valeur'];?>";
+	    	<?php $r=$q[2];?>
+	    	answer.innerHTML="<?php echo $r[3];?>";
+	    	
 		} else if (compteur==2) {
 			<?php $q=$questions[2];?>
 			question.innerHTML="<?php echo $q[1];?>";
+            <?php $r=$q[2];?>
+	    	answer.innerHTML="<?php echo $r[3];?>";
+	    	
 		} else if (compteur==3) {
 			<?php $q=$questions[3];?>
 			question.innerHTML="<?php echo $q[1];?>";
+			
 		} else if (compteur==4) {
 			<?php $q=$questions[4];?>
 			question.innerHTML="<?php echo $q[1];?>";
+			
 		} else if (compteur==5) {
 			<?php $q=$questions[5];?>
 			question.innerHTML="<?php echo $q[1];?>";
+			
 		} else if (compteur==6) {
 			<?php $q=$questions[6];?>
 			question.innerHTML="<?php echo $q[1];?>";
+			
 		} else {
 	    	question.innerHTML="No more questions.";
 		}

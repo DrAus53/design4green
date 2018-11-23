@@ -12,7 +12,6 @@ try {
     $stmtQuestion->execute();
     
     $questions = array();
-    // set the resulting array to associative
     $result = $stmtQuestion->setFetchMode(PDO::FETCH_ASSOC);
     $state = "init";
     while ($donnesQuestion = $stmtQuestion->fetch()) {
