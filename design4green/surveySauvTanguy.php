@@ -71,7 +71,7 @@
         displayQuestion();
     }
 
-    var compteur = 80;
+    var compteur = 1;
 
     function displayQuestion() {
 
@@ -80,47 +80,95 @@
 
         if (compteur == 1) {
             <?php $q = $questions[1];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 2) {
             <?php $q = $questions[2];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 3) {
             <?php $q = $questions[3];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 4) {
             <?php $q = $questions[4];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 5) {
             <?php $q = $questions[5];?>
@@ -146,80 +194,165 @@
 
         } else if (compteur == 11) {
             <?php $q = $questions[11];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 12) {
             <?php $q = $questions[12];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 13) {
             <?php $q = $questions[13];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 14) {
             <?php $q = $questions[14];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 15) {
             <?php $q = $questions[15];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 16) {
             <?php $q = $questions[16];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 17) {
             <?php $q = $questions[17];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
+
         } else if (compteur == 18) {
             <?php $q = $questions[18];?>
             question.innerHTML = "<?php echo $q[1];?>";
@@ -230,27 +363,29 @@
                     echo "<br>";
                 }
                 ?>";
-        } else if (compteur == 6) {
-            <?php $q = $questions[31];?>
-            question.innerHTML = "<?php echo $q[31];?>";
-            <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
 
         } else if (compteur == 39) {
             <?php $q = $questions[39];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 40) {
             <?php $q = $questions[40];?>
@@ -276,91 +411,187 @@
 
         } else if (compteur == 42) {
             <?php $q = $questions[42];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 43) {
             <?php $q = $questions[43];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 44) {
             <?php $q = $questions[44];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 45) {
             <?php $q = $questions[45];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 46) {
             <?php $q = $questions[46];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 47) {
             <?php $q = $questions[47];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 48) {
             <?php $q = $questions[48];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 49) {
             <?php $q = $questions[49];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 50) {
             <?php $q = $questions[50];?>
@@ -375,14 +606,26 @@
 
         } else if (compteur == 62) {
             <?php $q = $questions[62];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 63) {
             <?php $q = $questions[63];?>
@@ -397,90 +640,186 @@
 
         } else if (compteur == 70) {
             <?php $q = $questions[70];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 71) {
             <?php $q = $questions[71];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 72) {
             <?php $q = $questions[72];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 73) {
             <?php $q = $questions[73];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
         } else if (compteur == 74) {
             <?php $q = $questions[74];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 75) {
             <?php $q = $questions[75];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 76) {
             <?php $q = $questions[76];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 77) {
             <?php $q = $questions[77];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "radio";
+            inputRep.name = ("radio" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 78) {
             <?php $q = $questions[78];?>
@@ -538,7 +877,7 @@
             var inputRep = document.createElement("input");
             inputRep.type = "checkbox";
             inputRep.name = ("checkbox" + compteur);
-            inputRep.id = ("checkbox" + compteur);
+            inputRep.id = ($reponse[0]);
             var labelRep = document.createElement("label");
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
@@ -553,14 +892,26 @@
 
         } else if (compteur == 87) {
             <?php $q = $questions[87];?>
+            var sautligne = document.createElement("br");
+            var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            answer.innerHTML = "<?php
-                foreach ($r as $reponse) {
-                    echo $reponse[2];
-                    echo "<br>";
-                }
-                ?>";
+            var answer = document.getElementById("surveyAnswer");
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
+            var inputRep = document.createElement("input");
+            inputRep.type = "checkbox";
+            inputRep.name = ("checkbox" + compteur);
+            inputRep.id = ($reponse[0]);
+            var labelRep = document.createElement("label");
+            labelRep.htmlFor = "reponse" + compteur;
+            labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            answer.appendChild(inputRep);
+            answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            <?php } ?>
+            question.appendChild(sautligne);
+            question.appendChild(answer);
 
         } else if (compteur == 88) {
             <?php $q = $questions[88];?>
