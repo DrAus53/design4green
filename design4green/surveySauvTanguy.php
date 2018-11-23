@@ -533,7 +533,6 @@
             <?php $r = $q[2];?>
             <?php foreach ($r as $reponse) { ?>
             var answer = document.createElement("surveyAnswer");
-            answer.innerHTML = "<?php echo $reponse[2];?>";
             answer.id = "reponse" + compteur;
             var inputRep = document.createElement("input");
             inputRep.type = "checkbox";
@@ -542,8 +541,11 @@
             var labelRep = document.createElement('label');
             labelRep.htmlFor = "reponse" + compteur;
             labelRep.appendChild(document.createTextNode(<?php echo '"', $reponse[2], '"' ?> ));
+            var sautligne = document.createElement('br');
             answer.appendChild(inputRep);
             answer.appendChild(labelRep);
+            answer.appendChild(sautligne);
+            question.appendChild(sautligne);
             question.appendChild(answer);
             <?php } ?>
 
