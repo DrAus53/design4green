@@ -531,10 +531,9 @@
             var question = document.getElementById('surveyQuestion');
             question.innerHTML = "<?php echo $q[1];?>";
             <?php $r = $q[2];?>
-            <?php foreach ($r as $reponse) { ?>
-            console.log('1');
             var answer = document.getElementById("surveyAnswer");
-            answer.id = "reponse" + compteur;
+            answer.innerHTML= "";
+            <?php foreach ($r as $reponse) { ?>
             var inputRep = document.createElement("input");
             inputRep.type = "checkbox";
             inputRep.name = ("checkbox" + compteur);
